@@ -1,5 +1,9 @@
 # TOKEEBS
 
+A new comfortable and efficient design for numeric keyboards, to allow 12 keys be used for digits, letters, symbols and functions. 
+
+## Problem
+
 What could be the best comfortable and efficient design for a numerical 12 keys that allows use of numbers, letters, symbols and controls ?
 
 The frequency analises are done using the NGSL 1.2 list of 2803 words to define proprieties for a confortable and eficient keyboad.
