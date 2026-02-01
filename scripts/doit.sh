@@ -1,10 +1,12 @@
 #! /bin/bash
 
-# clean lines
-cat NGSL_12_stats.csv | cut -f 1,4 -d',' | tr ',' ' ' > z0
+LIST="../lists/NGSL_12_stats.csv"
+
+# clean lines, convert to 'lemma fppm'
+cat $LIST | cut -f 1,4 -d',' | tr ',' ' ' > z0
 
 # frequencies
-awk -f redux.awk < z0 > z1
+awk -f ../scripts/redux.awk < z0 > z1
 
 # percents
 cat z1 | grep '%' | sort -nr -k 3 -t' ' > z2
