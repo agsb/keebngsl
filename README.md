@@ -65,11 +65,11 @@ The result frequency tables for letters, digraphs, trigraphs, tetragraphs and no
 
 ### the combinations
 
-After processing, the order of letters from high to lower frequencies  in groups of 8, are:
+After processing, the order of letters from high to lower frequenciesi, in groups of 8, are:
 
     **e t o a n h i r -- s l d u c b f y -- m w p g v k x j -- q z**.
 
-To logical option for minimize the efforts is combine one letter of each group per key, selected with digraphs and trigraphs with lowerest frequencies. ( Using ..... )
+A logical option for minimize the efforts is combine one letter of each group per key, selected with digraphs and trigraphs with lowerest frequencies. ( Using ..... )
 
 The digraphs with first letter from group one _e t o a n h i r_ with second letter from group two _s l d u c b f y_ were selected from the list frequencies of digraphs and complemented witht frequency 0.0 for those inexistent. Then use brute force for select best lower overall combinations.
 
