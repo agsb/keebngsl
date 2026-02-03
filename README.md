@@ -10,6 +10,10 @@ The frequency analises are done using the NGSL 1.2 list of 2803 words to define 
 
 ## Telephone numeric 12 keyboard
 
+The common 12 keys numeric keyboard was designed by Sundstrand’s, the 10-key adding machine, in 1914.
+
+Historic references at https://uxdesign.cc/a-brief-history-of-the-numeric-keypad-59112cbf4c49
+
 Old telephone keyboards have a letter layout over the numeric 12 keys.
 For access the letter must press it 1 or 2 or 3 times, like 8(t)44(h)-1-444(i)7777(s)
 
@@ -72,6 +76,15 @@ After processing, the order of letters from high to lower frequenciesi, in group
 A logical option for minimize the efforts is combine one letter of each group per key, selected with digraphs and trigraphs with lowerest frequencies. ( Using ..... )
 
 The digraphs with first letter from group one _e t o a n h i r_ with second letter from group two _s l d u c b f y_ were selected from the list frequencies of digraphs and complemented witht frequency 0.0 for those inexistent. Then use brute force for select best lower overall combinations.
+
+## Results
+
+| design | touchs | total | layout | 
+| -- | -- | -- | -- |
+| full keyboard | 3.30764 | 0.853976 | abcdefghijklmnopqrstuvwxyz |
+| common numeric keyboard | 7.02167 | 0.853976 | abc def ghi jkl mno pqrs tuv wxyz | 
+| design numeric keyboard | 4.80558 | 0.853976 | |
+
 
 ## Lists used
 

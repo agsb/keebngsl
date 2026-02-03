@@ -1,7 +1,7 @@
 #!/usr/bin/awk
 # agsb@ 2026/02
 #
-# calculate frequency of letters, digrams, trigrams, tetraphs
+# calculate frequency of characters, digrams, trigrams, tetraphs
 #
 # input frequencies from converted to 'lemma fppm'
 #       lemma a word
@@ -23,11 +23,8 @@ BEGIN {
 {
         lines++
         
-        # skip header at first line
-        if (lines == 1) next;
-
         # skip any comments
-        if ($1 == "#") next;
+        if ($1 == "^#") next;
 
         # wise 
         $0 = tolower ($0)
@@ -54,7 +51,7 @@ END {
         # make frequencies from fppm 
         for ( w in words) {
 
-                # letters
+                # characters
                 m = split(w, is, "")
                 for ( i = 1; i <= m; i++ ) {
                         k = is[i]
@@ -110,7 +107,7 @@ END {
         # show frequencies        
         # -- do not try cumulative, because no ordered list
                 
-        for ( k in sums) { # letters
+        for ( k in sums) { # characters
                 v = (sums[k] * 100.0 / qts)
                 print "- " k " " v " "
                 }
@@ -145,4 +142,5 @@ END {
 
         }
 
+        # show some statistics
 

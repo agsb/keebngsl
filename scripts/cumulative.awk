@@ -18,16 +18,15 @@ BEGIN {
 
 # read the file
 {
-        lines++
-        
+
         # skip any comments
-        if ($1 == "#") next;
+        if ($1 == "^#") next;
 
         # sum all fppms
 
         sum += 0.0 + $3
 
-        print $1 " " $2 " " $3 " " sum
+        print $1 " " $2 " " $3 " " sum " "
 
         }
 
