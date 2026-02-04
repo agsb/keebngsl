@@ -1,54 +1,83 @@
-#! /bin/bash
+#! /usr/bin/bash
 
-# frequencies
+# ae define frequencies
+
+## frequencies
 awk -f reduce.awk < $1 > $1.z0
 
-# characters
+## characters
 cat $1.z0 | grep '-' | sort -nr -k 3 -t' '  | tee $1.z1 | awk -f cumulative.awk > $1.z1c
 
-# digrams
+## digrams
 cat $1.z0 | grep '=' | sort -nr -k 3 -t' '  | tee $1.z2 | awk -f cumulative.awk > $1.z2c
 
-# trigrams
+## trigrams
 cat $1.z0 | grep '+' | sort -nr -k 3 -t' '  | tee $1.z3 | awk -f cumulative.awk > $1.z3c
 
-# quadgrams
+## quadgrams
 cat $1.z0 | grep '\^' | sort -nr -k 3 -t' '  | tee $1.z4 | awk -f cumulative.awk > $1.z4c
 
-# percents
+## percents
 cat $1.z0 | grep '%' | sort -nr -k 3 -t' '  | tee $1.z5 | awk -f cumulative.awk > $1.z5c
 
-# digrams that no exists
-cat $1.z0 | grep '~' | sort -k 2 -t' ' > $1.z6
+## character best order
+cat $1.z1 | tr -d '\n[:digit:]-. ' | tee z | sed 's/\(.\)/\1 /g;' >  $1.z6
 
-# how many no exists by first character
-cat $1.z0 | grep '?' | sort -nr -k 3 -t' ' > $1.z7
+## digrams that no exists
+cat $1.z0 | grep '~' | sort -k 2 -t' ' > $1.z7
 
-# select order for characters
-# eg: @etoanhir@slducbfy@mwpgvkxj@qz
+## how many not exist by first character
+cat $1.z0 | grep '?' | sort -n -k 3 -t' ' > $1.z8
 
+# prepare for regex
+# cat $1.z6 | sed -e 's/ //g; s/\(.\{,8\}\)/@\1/g; ' > $1.z9
 
-cat $1.z1 | tr -d '\n[:digit:]-. ' >  $1.z8
+# sum frequencies of characters in any order and sort by fppm
 
-# sum frequencies of characters in any order
+cat lst.z6 | sed -e 's/ */ /g; s/^ *//; s/ *$//;' > $1.z9
 
-awk -f bigrams.awk  `sed -e 's/ *//g' < $1.z8 ` < $1.z2 | sort -n -k3 -t' '> $1.z20
+awk -f bigrams.awk  "`cat $1.z9 `" < $1.z2 | sort -n -k3 -t' '> $1.z20
 
-awk -f trigrams.awk `sed -e 's/ *//g' < $1.z8 ` < $1.z3 | sort -n -k3 -t' '> $1.z30
+awk -f trigrams.awk "`cat $1.z9 `" < $1.z3 | sort -n -k3 -t' '> $1.z30
 
-# select tuples
+# process the bigrams list by character order and frequency
 
-# for bigrams
-awk -f select.awk < $1.z20 > $1.z21
+> $1.z21
+for n in `cat $1.z9` ; do
+        grep " ${n}" lst.z20 >> $1.z21
+done
 
-# for trigrams
-# mask for any trigrams with bigrams already defined
-# echo "`cat $1.z20 | cut -f 2  -d ' ' | tr  '\n' ' ' | tr ' ' '|' | sed -e 's/.$//' `"
+awk -f filter2.awk < $1.z21 > $1.z22
 
-grep -E `cat $1.z20 | cut -f 2  -d ' ' | tr  '\n' ' ' | tr ' ' '|' | sed -e 's/.$//' ` $1.z30 > $1.z31
+# process the bigrams list by character order and frequency
+
+cat $1.z22 | tr -d "[:digit:]#.*\n" | tee z | \
+        sed -e 's/  */ /g; s/^ *//; s/ *$//;' > $1.z10
+
+> $1.z31
+for n in `cat $1.z10` ; do
+        grep " ${n}" lst.z30 >> $1.z31
+done
+
+# case for priority by low counts of 0.0
+
+grep ' 0 ' $1.z31 | uniq -c -s 2 -w 2 | sort -n | \
+        tr -s ' ' | cut -f 4 -d ' ' | tr '\n' ' ' | \
+        sed -e 's/\(..\). /\1 /g' > $1.z11
+
+# re order
+> $1.z31
+for n in `cat $1.z11` ; do
+        grep " ${n}" lst.z30 >> $1.z31
+done
+
+awk -f filter3.awk < $1.z31 > $1.z32
+
+exit
 
 # compare designs
 
+# common
 cat $1 | sed -e " s/[adgjmptw]/1/g; s/[behknqux]/22/g; s/[cfilorvy]/333/g; s/[sz]/4444/g;" > $1.abc
 
 # prepare for substitution
@@ -62,7 +91,6 @@ cat $1.z8 | sed -e "s/\(.\{,8\}\)/@\1/g;" | tee $1.z9 | \
 
 # replaces
 sh $1.z11 < $1 > $1.eto
-
 
 # sumarize as ppm
 
