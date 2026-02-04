@@ -11,10 +11,10 @@ BEGIN {
         
         # define the order for characters
 
-        it = ARGV[1] 
+        w = ARGV[1] 
 
         # define the ordened sequential array
-        n = split (it, is, ":")
+        n = split (w, is, " ")
 
         delete ARGV[1]
         }

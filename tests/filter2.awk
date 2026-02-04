@@ -8,28 +8,22 @@
 
 BEGIN {
         
-        # define the order for characters
-
-        w = ARGV[1] 
-
-        delete ARGV[1]
-
         sum = 0
+        ws = ""
+
         }
 
 {
         # skip comments
         if ($1 == "^#") next
 
-        n = split($2, ws, "")
+        n = split($2, w, "")
 
-        if ( sub(ws[1], "&", w) == 0) next
+        if ( sub(w[1], "&", ws) > 0) next
 
-        if ( sub(ws[2], "&", w) == 0) next
+        if ( sub(w[2], "&", ws) > 0) next
 
-        sub(ws[1], "", w)
-
-        sub(ws[2], "", w)
+        ws = ws $2
 
         print "* " $2 " " $3 " "
 
