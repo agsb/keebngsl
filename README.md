@@ -80,13 +80,15 @@ The digraphs with first letter from group one _e t o a n h i r_ with second lett
 
 ## Results
 
-Using the initial NGLS list as corpus and counting the ocurrencies as ppm (0.853976) for 8 numeric keyboard, shows:
+Using the initial NGLS list as corpus and counting the ocurrencies as ppm (0.853976) for numeric keyboard, shows:
 
 | design | touchs | layout | 
 | -- | -- | -- | 
 | full keyboard | 3.30764 | abcdefghijklmnopqrstuvwxyz |
-| common layout | 7.02167 | ___ abc def ghi jkl mno pqrs tuv wxyz # 0 * | 
-| design layout | 4.80558 | space afp obg tdx hym euk nlvq icj rswz # 0 * |
+| common layout | 7.02167 | _,@ abc def ghi jkl mno pqrs tuv wxyz * 0 # | 
+| design layout | 4.80558 | space afp obg tdx hym euk nlvq icj rswz * 0 # |
+
+Adicional functions are assigned to __* 0 #__
 
 The common layout show a 212.286 % effort over a full keyboard, and the design layout only 145.287 % 
 
