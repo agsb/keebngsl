@@ -85,8 +85,8 @@ Using the initial NGLS list as corpus and counting the ocurrencies as ppm (0.853
 | design | touchs | layout | 
 | -- | -- | -- | 
 | full keyboard | 3.30764 | abcdefghijklmnopqrstuvwxyz |
-| common layout | 7.02167 | abc def ghi jkl mno pqrs tuv wxyz | 
-| design layout | 4.80558 | |
+| common layout | 7.02167 | ___ abc def ghi jkl mno pqrs tuv wxyz # 0 * | 
+| design layout | 4.80558 | space afp obg tdx hym euk nlvq icj rswz # 0 * |
 
 The common layout show a 212.286 % effort over a full keyboard, and the design layout only 145.287 % 
 
