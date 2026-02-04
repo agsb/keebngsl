@@ -6,7 +6,7 @@ A new comfortable and efficient design for numeric keyboards, to allow 12 keys b
 
 What could be the best comfortable and efficient design for a numerical 12 keys that allows use of numbers, letters, symbols and controls ?
 
-The frequency analises are done using the NGSL 1.2 list of 2803 words to define proprieties for a confortable and eficient keyboad.
+The frequency analises are done using the NGSL 1.2 list of 2809 words to define frequencies for characters, bigrams, trigrams, tetragrams and select the combination of characters that gives the lowerst colision count for a confortable and eficient layout.
 
 ## Telephone numeric 12 keyboard
 
@@ -17,20 +17,21 @@ Historic references at https://uxdesign.cc/a-brief-history-of-the-numeric-keypad
 Old telephone keyboards have a letter layout over the numeric 12 keys.
 For access the letter must press it 1 or 2 or 3 times, like 8(t)44(h)-1-444(i)7777(s)
 
-```
-    1 record on/off
-    2 abc
-    3 def
-    4 ghi
-    5 jkl
-    6 mno
-    7 pqrs
-    8 tuv
-    9 wxyz
-    0 space
-    * 1a?
-    # shift on/off
-```
+| key | 1st | 2nd | 3rd | 4th |
+| -- | -- | -- | -- | -- |
+   | 1 | record on/off
+   | 2 | a|b|c| |
+   | 3 | d|e|f| |
+   | 4 | g|h|i| |
+   | 5 | j|k|l| |
+   | 6 | m|n|o| |
+   | 7 | p|q|r|s |
+   | 8 | t|u|v| |
+   | 9 | w|x|y|z |
+   | 0 | space | | | |
+   | * | 1|a|?| | |
+   | # | shift on/off |
+
 
 What could be a better layout ? 
 
@@ -61,11 +62,11 @@ All processing are done using AWK and Bash scripts and common GNU Linux tools.
 
 ### the frequencies
 
-The 2803 words of NGSL 1.2 are represented as "lemma fppm", where lemma is the word and fppm is the frequency of lemma per million.
+The 2809 words of NGSL 1.2 are represented as "lemma fppm", where lemma is the word and fppm is the absolute frequency of lemma per million.
 
-Then for each letter the fppm of ocurrences in all lemmas are normalized as absolute percentual, and same process for digraphs, trigraphs and tetragraphs using space at begin and ends to form the lemmas. The unused digraphs are listed.
+Then for each character the fppm of ocurrences in all lemmas are normalized as absolute percentual, and same process for bigrams, trigrams and tetragrams using space at begin and end, to form the normal use of lemmas. The unused digraphs are listed.
 
-The result frequency tables for letters, digraphs, trigraphs, tetragraphs and not found digraphs.
+The result frequency tables for letters, digraphs, trigraphs, tetragraphs and for not found digraphs.
 
 ### the combinations
 
