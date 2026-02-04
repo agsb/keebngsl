@@ -36,16 +36,24 @@ awk -f bigrams.awk  `sed -e 's/ *//g' < $1.z8 ` < $1.z2 | sort -n -k3 -t' '> $1.
 
 awk -f trigrams.awk `sed -e 's/ *//g' < $1.z8 ` < $1.z3 | sort -n -k3 -t' '> $1.z30
 
-# select tuples
+# select tuples, keep the order of least ppm percents
 
 # for bigrams
-awk -f select.awk < $1.z20 > $1.z21
+
+# awk -f select.awk < $1.z20 > $1.z21
+
+# using first ocurrence on list
+
+# for bigrams
+awk -f select2g.awk `cat $1.z8` < $1.z20 > $1.z21
+
+# for trigrams
+awk -f select3g.awk `cat $1.z8` < $1.z30 > $1.z31
 
 # for trigrams
 # mask for any trigrams with bigrams already defined
-# echo "`cat $1.z20 | cut -f 2  -d ' ' | tr  '\n' ' ' | tr ' ' '|' | sed -e 's/.$//' `"
-
-grep -E `cat $1.z20 | cut -f 2  -d ' ' | tr  '\n' ' ' | tr ' ' '|' | sed -e 's/.$//' ` $1.z30 > $1.z31
+#echo "`cat $1.z21 | sed -e '/#/d' | cut -f 2  -d ' ' | tr  '\n' ' ' | tr ' ' '|' | sed -e 's/.$//' `"
+# grep -E `cat $1.z21 | cut -f 2  -d ' ' | tr  '\n' ' ' | tr ' ' '|' | sed -e 's/.$//' ` $1.z30 > $1.z31
 
 # compare designs
 
@@ -63,7 +71,6 @@ cat $1.z8 | sed -e "s/\(.\{,8\}\)/@\1/g;" | tee $1.z9 | \
 
 # replaces
 sh $1.z11 < $1 > $1.eto
-
 
 # sumarize as ppm
 
