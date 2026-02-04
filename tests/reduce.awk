@@ -7,7 +7,8 @@
 #       lemma a word
 #       fppm  a frequency ( in parts per million )
 #
-
+# all results are in percents of corpus with six significant digits
+#
 # prepare
 BEGIN {
 

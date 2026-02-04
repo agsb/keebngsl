@@ -14,7 +14,7 @@ BEGIN {
         it = ARGV[1] 
 
         # define the ordened sequential array
-        n = split (it, is, "")
+        n = split (it, is, ":")
 
         delete ARGV[1]
         }
