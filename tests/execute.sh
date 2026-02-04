@@ -21,7 +21,7 @@ cat $1.z0 | grep '\^' | sort -nr -k 3 -t' '  | tee $1.z4 | awk -f cumulative.awk
 cat $1.z0 | grep '%' | sort -nr -k 3 -t' '  | tee $1.z5 | awk -f cumulative.awk > $1.z5c
 
 ## character best order
-cat $1.z1 | tr -d '\n[:digit:]-. ' | tee z | sed 's/\(.\)/\1 /g;' >  $1.z6
+cat $1.z1 | tr -d '\n[:digit:]-. ' | sed 's/\(.\)/\1 /g;' >  $1.z6
 
 ## digrams that no exists
 cat $1.z0 | grep '~' | sort -k 2 -t' ' > $1.z7
@@ -51,7 +51,7 @@ awk -f filter2.awk < $1.z21 > $1.z22
 
 # process the bigrams list by character order and frequency
 
-cat $1.z22 | tr -d "[:digit:]#.*\n" | tee z | \
+cat $1.z22 | tr -d "[:digit:]#.*\n" | \
         sed -e 's/  */ /g; s/^ *//; s/ *$//;' > $1.z10
 
 > $1.z31
@@ -73,24 +73,27 @@ done
 
 awk -f filter3.awk < $1.z31 > $1.z32
 
-exit
 
 # compare designs
-
-# common
-cat $1 | sed -e " s/[adgjmptw]/1/g; s/[behknqux]/22/g; s/[cfilorvy]/333/g; s/[sz]/4444/g;" > $1.abc
 
 # prepare for substitution
 # each group of 8 keys have same touch cost
 # each character is replaced by digits as touch cost
 
-cat $1.z8 | sed -e "s/\(.\{,8\}\)/@\1/g;" | tee $1.z9 | \
-        sed -e "s/@/\]\/+\/g; s\/\[/g;" | \
-        sed -e "s/\([^;]*;\)\(.*\)/ sed -e \"\2\1\"/; " | \
-        sed -e "s/+/1/; s/+/22/; s/+/333/; s/+/4444/; " > $1.z11
+# common layout
 
 # replaces
-sh $1.z11 < $1 > $1.eto
+cat $1 | sed -e " s/[adgjmptw]/1/g; s/[behknqux]/22/g; s/[cfilorvy]/333/g; s/[sz]/4444/g;" > $1.z40
+
+# ngsl layout
+cat $1.z9 | sed -e "s/ //g; s/\(.\{,8\}\)/@\1/g;" | \
+        sed -e "s/@/\]\/+\/g; s\/\[/g;" | \
+        sed -e "s/\([^;]*;\)\(.*\)/ sed -e \"\2\1\"/; " | \
+        sed -e "s/+/1/; s/+/22/; s/+/333/; s/+/4444/; " > $1.z33
+
+# replaces
+cat $1 | sh $1.z33 > $1.z41
+
 
 # sumarize as ppm
 
@@ -101,13 +104,13 @@ echo ": full keyboard " >> $1.sum
 awk -f summative.awk < $1 >> $1.sum
 
 # eight keys keyboard common
-echo ": common numeric keyboard, abc def ghi jkl mno pqrs tuv wxyz " >> $1.sum
-awk -f summative.awk < $1.abc >> $1.sum
+echo ": common numeric keyboard " >> $1.sum
+awk -f summative.awk < $1.z40 >> $1.sum
 
 echo ": design numeric keyboard " >> $1.sum
 # eight keys keyboard design
-awk -f summative.awk < $1.eto >> $1.sum
+awk -f summative.awk < $1.z41 >> $1.sum
 
 
-
+cat lst.z22 lst.z32 lst.sum lst.z9 > results
 
