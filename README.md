@@ -91,7 +91,7 @@ Using the initial NGLS list as corpus and counting the ocurrencies as ppm (0.853
 
 Adicional functions are assigned to __* 0 #__
 
-The common layout show a 212.286 % effort over a full keyboard, and the design layout only 145.287 % 
+The common layout show a 112.286 % effort over a full keyboard, and the design layout only 45.287 % 
 
 ## Lists used
 
