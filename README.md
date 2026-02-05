@@ -62,7 +62,7 @@ The reference word list used was the 2809 words of NGSL 1.2, represented as "lem
 
 For each character the fppm of ocurrences in all lemmas are normalized as absolute percentual relative to corpus, same process for bigrams, trigrams and tetragrams, including space at begin and end, to form the normal use of lemmas, also unused digraphs are listed.
 
-The result frequency tables for (characters)[https://github.com/agsb/keebngsl/blob/main/characters.md], [digraphs](https://github.com/agsb/keebngsl/blob/main/bigrams.md), (trigraphs)[https://github.com/agsb/keebngsl/blob/main/trigrams.md], tetragraphs and for not found digraphs are at ...
+The result frequency tables for [characters](https://github.com/agsb/keebngsl/blob/main/characters.md), [digraphs](https://github.com/agsb/keebngsl/blob/main/bigrams.md), [trigraphs](https://github.com/agsb/keebngsl/blob/main/trigrams.md), tetragraphs and for not found digraphs are at ...
 
 ### The combinations
 
