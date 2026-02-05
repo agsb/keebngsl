@@ -112,7 +112,7 @@ The digraphs with first character from group one _e t o a n h i r_ with second c
 
 ## Prediction
 
-work in progress using https://en.wikipedia.org/wiki/Prediction_by_partial_matching
+_work in progress_ for use [partial matching)[https://en.wikipedia.org/wiki/Prediction_by_partial_matching] and ( arithmetic coding)[https://en.wikipedia.org/wiki/Arithmetic_coding]
 
 ## Results
 
