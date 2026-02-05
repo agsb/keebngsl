@@ -1,10 +1,10 @@
 # TOKEEBS
 
-A new comfortable and efficient layout for numeric keyboards, to allow 12 keys be used for digits, letters, symbols and functions. 
+A new comfortable and efficient layout for numeric keyboards, to allow 12 keys be used for digits, characters, symbols and functions. 
 
 ## Problem
 
-What could be the best comfortable and efficient design for a numerical 12 keys that allows use of numbers, letters, symbols and controls ?
+What could be the best comfortable and efficient design for a numerical 12 keys that allows use of numbers, characters, symbols and controls ?
 
 Frequency analysis was performed using the NGSL 1.2 list of 2809 words to determine the frequencies of characters, bigrams, trigrams, and tetragrams, and the results are evaluated to determine the character combination per key that resulting in the lowest collision count. That combination was selected for a comfortable and efficient layout.
 
@@ -30,60 +30,55 @@ Old telephone keyboards have a character layout over the numeric 12 keys, but to
    | * | 1|a|?| | |
    | # | shift on/off |
 
-
-What could be a better layout ? 
-
 ## Restrictions
 
-    Assign keys in order frequency list. 
-    Balance counts to minimize overuse,
-    Avoid digraph in same key, 
-    Avoid trigraph in same key, 
+The layout must be use an 12 keys basic numeric keypad as above and follow 
 
-    1  used for space and backspace
-    2, 3, 4, 5, 6, 7, 8, 9 for multiple characters or symbols
-
+    Assign keys order from frequency lists. 
+    Balance the layout to minimize keystrokes. 
+    Avoid bigrams and trigrams on the same key. 
+    One key ( 1 ) for space and backspace.
+    Eigth keys ( 2, 3, 4, 5, 6, 7, 8, 9 ) for multiple use.
+    Three keys (* 0 #) for define mode and controls
+    
     Maybe:
-    0  use for common symbols comma, dot, question. 
-    \*  reserved for 12 selects as letters, symbols, functions, etc
-    \#  reserved for controls, as select + group of keys + execute, and alone to ends key repeats
+       0  use for common symbols comma, dot, question. 
+       \*  reserved for 12 selects as characters, symbols, functions, etc
+       \#  reserved for controls, as select + group of keys + execute, and alone to ends key repeats
 
-With one key for space or backspace, and **8 keys for 26 letters**, then 6 keys with 3 letters and 2 keys with four. 
-
-How define the groups of letters for each keys ? How easy split digraphs of same letter ?
+With one key for space or backspace, and **8 keys for 26 characters**, then 6 keys with 3 characters and 2 keys with four. 
 
 ## NGSL
 
-Using the frequency of letters on NGLS and minimize finger movement for most used words.
+Using the frequency of characters on NGLS and minimize finger movement for most used words.
 
 ## Process
 
 All processing are done using AWK and Bash scripts and common GNU Linux tools.
 
-
 ### the frequencies
 
-The 2809 words of NGSL 1.2 are represented as "lemma fppm", where lemma is the word and fppm is the absolute frequency of lemma per million.
+The reference word list used was the 2809 words of NGSL 1.2, represented as "lemma fppm", where lemma is a word and fppm is the absolute frequency of lemma per million. That corpus is equivalent to a book with 853,976 words. 
 
-Then for each character the fppm of ocurrences in all lemmas are normalized as absolute percentual, and same process for bigrams, trigrams and tetragrams using space at begin and end, to form the normal use of lemmas. The unused digraphs are listed.
+Then for each character the fppm of ocurrences in all lemmas are normalized as absolute percentual relative to corpus, same process for bigrams, trigrams and tetragrams, including space at begin and end, to form the normal use of lemmas, also unused digraphs are listed.
 
-The result frequency tables for letters, digraphs, trigraphs, tetragraphs and for not found digraphs.
+The result frequency tables for characters, digraphs, trigraphs, tetragraphs and for not found digraphs are at ...
 
 ### the combinations
 
-After processing, the order of letters from high to lower frequenciesi, in groups of 8, are:
+After processing, the order of characters from high to lower frequencies, in groups of 8, are:
 
     **e t o a n h i r -- s l d u c b f y -- m w p g v k x j -- q z**.
 
-A logical option for minimize the efforts is combine one letter of each group per key, selected with digraphs and trigraphs with lowerest frequencies. ( Using ..... )
+A logical option for minimize the number of keystrokes is combine one character of each group per key, selected with digraphs and trigraphs with lowerest frequencies. ( Using ..... )
 
-The digraphs with first letter from group one _e t o a n h i r_ with second letter from group two _s l d u c b f y_ were selected from the list frequencies of digraphs and complemented witht frequency 0.0 for those inexistent. Then use brute force for select best lower overall combinations.
+The digraphs with first character from group one _e t o a n h i r_ with second character from group two _s l d u c b f y_ were selected from the list frequencies of digraphs and complemented witht frequency 0.0 for those inexistent. Then use brute force for select best lower overall combinations.
 
 ## Results
 
 Using the initial NGLS list as corpus and counting the ocurrencies as ppm (0.853976) for numeric keyboard, shows:
 
-| design | touchs | layout | 
+| design | keystrokes | layout | 
 | -- | -- | -- | 
 | full keyboard | 3.30764 | abcdefghijklmnopqrstuvwxyz |
 | common layout | 7.02167 | _,@ abc def ghi jkl mno pqrs tuv wxyz * 0 # | 
