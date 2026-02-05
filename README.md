@@ -11,11 +11,9 @@ Frequency analysis was performed using the NGSL 1.2 list of 2809 words to determ
 ## Telephone numeric 12 keyboard
 
 The common 12 keys numeric keyboard was designed by Sundstrand’s, the 10-key adding machine, in 1914.
-
 Historic references at https://uxdesign.cc/a-brief-history-of-the-numeric-keypad-59112cbf4c49
 
-Old telephone keyboards have a letter layout over the numeric 12 keys.
-For access the letter must press it 1 or 2 or 3 times, like 8(t)44(h)-1-444(i)7777(s)
+Old telephone keyboards have a character layout over the numeric 12 keys, but to access the keys must press it 1 or 2 or 3 times, like 8(t)44(h)-1-444(i)7777(s)
 
 | key | 1st | 2nd | 3rd | 4th |
 | -- | -- | -- | -- | -- |
@@ -42,12 +40,15 @@ What could be a better layout ?
     Avoid digraph in same key, 
     Avoid trigraph in same key, 
 
-    1, 2, 3, 4, 5, 6, 7, 8, 9 for arranje multiple letters or symbols
+    1  used for space and backspace
+    2, 3, 4, 5, 6, 7, 8, 9 for multiple characters or symbols
+
+    Maybe:
     0  use for common symbols comma, dot, question. 
     \*  reserved for 12 selects as letters, symbols, functions, etc
     \#  reserved for controls, as select + group of keys + execute, and alone to ends key repeats
 
-With one key for space or backspace, and **8 keys for arranje 26 letters**, then 6 keys with 3 letters and 2 keys with four. 
+With one key for space or backspace, and **8 keys for 26 letters**, then 6 keys with 3 letters and 2 keys with four. 
 
 How define the groups of letters for each keys ? How easy split digraphs of same letter ?
 
