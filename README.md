@@ -104,7 +104,7 @@ After processing, the order of characters from high to lower frequencies, in per
     
 In groups of eight keys **e t o a n h i r // s l d u c b f y // m w p g v k x j // q z**.
 
-The tables for n-grams are in ...
+The tables for n-grams are in [results](https://github.com/agsb/keebngsl/blob/main/ngsl/)
 
 A logical option for minimize the number of keystrokes is combine one character of each group per key, selected with digraphs and trigraphs with lowerest frequencies. ( Using ..... )
 
