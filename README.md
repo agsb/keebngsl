@@ -56,7 +56,7 @@ Using the frequency of characters on NGLS and minimize finger movement for most 
 
 All processing are done using AWK and Bash scripts and common GNU Linux tools.
 
-(Check the code)[https://github.com/agsb/keebngsl/tree/main/scripts],if you're curious about the details.
+Please (Check the code)[https://github.com/agsb/keebngsl/tree/main/scripts], if you're curious about the details.
 
 ### The frequencies
 
