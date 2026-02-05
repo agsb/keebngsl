@@ -66,7 +66,7 @@ For each character the fppm of ocurrences in all lemmas are normalized as absolu
 
 The result frequency tables for [characters](https://github.com/agsb/keebngsl/blob/main/characters.md), [bigrams](https://github.com/agsb/keebngsl/blob/main/bigrams.md), [trigrams](https://github.com/agsb/keebngsl/blob/main/trigrams.md). 
 
-Also [tetragrams](https://github.com/agsb/keebngsl/blob/main/tetragrams.md) and not found digraphs are at [results](https://github.com/agsb/keebngsl/tree/main/ngsl), which are usefull for represent a full word as combination of inexistant digraphs, like "tt" represent "the".
+Also [tetragrams](https://github.com/agsb/keebngsl/blob/main/tetragrams.md) and not found digraphs are at [results](https://github.com/agsb/keebngsl/tree/main/ngsl), which are maybe usefull for represent a full word as combination of inexistant digraphs.
 
 ### The combinations
 
