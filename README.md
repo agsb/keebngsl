@@ -1,12 +1,12 @@
 # TOKEEBS
 
-A new comfortable and efficient design for numeric keyboards, to allow 12 keys be used for digits, letters, symbols and functions. 
+A new comfortable and efficient layout for numeric keyboards, to allow 12 keys be used for digits, letters, symbols and functions. 
 
 ## Problem
 
 What could be the best comfortable and efficient design for a numerical 12 keys that allows use of numbers, letters, symbols and controls ?
 
-The frequency analises are done using the NGSL 1.2 list of 2809 words to define frequencies for characters, bigrams, trigrams, tetragrams and select the combination of characters that gives the lowerst colision count for a confortable and eficient layout.
+Frequency analysis was performed using the NGSL 1.2 list of 2809 words to determine the frequencies of characters, bigrams, trigrams, and tetragrams, and the results are evaluated to determine the character combination per key that resulting in the lowest collision count. That combination was selected for a comfortable and efficient layout.
 
 ## Telephone numeric 12 keyboard
 
