@@ -56,6 +56,8 @@ Using the frequency of characters on NGLS and minimize finger movement for most 
 
 All processing are done using AWK and Bash scripts and common GNU Linux tools.
 
+(Check the code)[https://github.com/agsb/keebngsl/blob/scripts/],if you're curious about the details.
+
 ### The frequencies
 
 The reference word list used was the 2809 words of NGSL 1.2, represented as "lemma fppm", where lemma is a word and fppm is the absolute frequency of lemma per million. That corpus is equivalent to a book with 853,976 words. 
@@ -129,6 +131,10 @@ The common layout show a 112.286 % effort over a full keyboard, and the design l
     ngrp    google books n-gram, only > 1
 
 ## References
+
+https://en.wikipedia.org/wiki/N-gram
+
+https://research.google/blog/all-our-n-gram-are-belong-to-you/
 
 https://newgeneralservicelist/s/NGSL_12_stats.csv
 
