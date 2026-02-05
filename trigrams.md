@@ -1,6 +1,7 @@
 ## Table of percent frequency of trigrams
 
 Note S is space, at begin or end of a word.
+
 | tri | absoulute | cumulative |
 | -- | -- | -- |
 | Sth | 2.98693 | 2.98693 | 
