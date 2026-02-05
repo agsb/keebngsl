@@ -108,6 +108,10 @@ A logical option for minimize the number of keystrokes is combine one character 
 
 The digraphs with first character from group one _e t o a n h i r_ with second character from group two _s l d u c b f y_ were selected from the list frequencies of digraphs and complemented witht frequency 0.0 for those inexistent. Then use brute force for select best lower overall combinations.
 
+## Prediction
+
+work in progress using https://en.wikipedia.org/wiki/Prediction_by_partial_matching
+
 ## Results
 
 Using the initial NGLS list as corpus and counting the ocurrencies as ppm (0.853976) for numeric keyboard, shows:
