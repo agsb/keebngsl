@@ -11,6 +11,14 @@ case $1 in
         tr -s ' '
         ;;
 
+        "GOOG") # from Google word frequency list
+        # convert values to fppm and use those bigger than 0
+        cat $2 | cut -f 1,3,4 -d',' | \
+        tr '"[:upper:]' ' [:lower:]' | \
+        sed -e 's/,/ /; s/  / /g; s/\,/./; s/ *//; s/ *$//;' | \
+        awk ' { v = int( $2 * 10000); if (v > 0) print " " $1 " " v " "; } '
+        ;;
+
         *)
         echo " Do not know about it. "
         ;;

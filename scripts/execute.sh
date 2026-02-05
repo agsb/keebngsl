@@ -6,19 +6,19 @@
 awk -f reduce.awk < $1 > $1.z0
 
 ## characters
-cat $1.z0 | grep '-' | sort -nr -k 3 -t' '  | tee $1.z1 | awk -f cumulative.awk > $1.z1c
+cat $1.z0 | grep '-' | sort -gr -k 3 -t' '  | tee $1.z1 | awk -f cumulative.awk > $1.z1c
 
 ## digrams
-cat $1.z0 | grep '=' | sort -nr -k 3 -t' '  | tee $1.z2 | awk -f cumulative.awk > $1.z2c
+cat $1.z0 | grep '=' | sort -gr -k 3 -t' '  | tee $1.z2 | awk -f cumulative.awk > $1.z2c
 
 ## trigrams
-cat $1.z0 | grep '+' | sort -nr -k 3 -t' '  | tee $1.z3 | awk -f cumulative.awk > $1.z3c
+cat $1.z0 | grep '+' | sort -gr -k 3 -t' '  | tee $1.z3 | awk -f cumulative.awk > $1.z3c
 
 ## quadgrams
-cat $1.z0 | grep '\^' | sort -nr -k 3 -t' '  | tee $1.z4 | awk -f cumulative.awk > $1.z4c
+cat $1.z0 | grep '\^' | sort -gr -k 3 -t' '  | tee $1.z4 | awk -f cumulative.awk > $1.z4c
 
 ## percents
-cat $1.z0 | grep '%' | sort -nr -k 3 -t' '  | tee $1.z5 | awk -f cumulative.awk > $1.z5c
+cat $1.z0 | grep '%' | sort -gr -k 3 -t' '  | tee $1.z5 | awk -f cumulative.awk > $1.z5c
 
 ## character best order
 cat $1.z1 | tr -d '\n[:digit:]-. ' | sed 's/\(.\)/\1 /g;' >  $1.z6

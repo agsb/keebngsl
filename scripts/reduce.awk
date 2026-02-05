@@ -110,22 +110,22 @@ END {
                 
         for ( k in sums) { # characters
                 v = (sums[k] * 100.0 / qts)
-                print "- " k " " v " "
+                printf ("- %1s %7.6f \n", k, v)
                 }
                 
         for ( k in sumd) { # digrams
                 v = (sumd[k] * 100.0 / qtd)
-                print "= " k " " v " "
+                printf ("= %2s %7.6f \n", k, v)
                 }
                 
         for ( k in sumt) { # trigrams
                 v = (sumt[k] * 100.0 / qtt)
-                print "+ " k " " v " "
+                printf ("+ %3s %7.6f \n", k, v)
                 }
                 
         for ( k in sumq) { # tetragrams
                 v = (sumq[k] * 100.0 / qtq)
-                print "^ " k " " v " "
+                printf ("^ %4s %7.6f \n", k, v)
                 }
                 
         # also digrams that no exists
