@@ -56,19 +56,51 @@ Using the frequency of characters on NGLS and minimize finger movement for most 
 
 All processing are done using AWK and Bash scripts and common GNU Linux tools.
 
-### the frequencies
+### The frequencies
 
 The reference word list used was the 2809 words of NGSL 1.2, represented as "lemma fppm", where lemma is a word and fppm is the absolute frequency of lemma per million. That corpus is equivalent to a book with 853,976 words. 
 
-Then for each character the fppm of ocurrences in all lemmas are normalized as absolute percentual relative to corpus, same process for bigrams, trigrams and tetragrams, including space at begin and end, to form the normal use of lemmas, also unused digraphs are listed.
+For each character the fppm of ocurrences in all lemmas are normalized as absolute percentual relative to corpus, same process for bigrams, trigrams and tetragrams, including space at begin and end, to form the normal use of lemmas, also unused digraphs are listed.
 
 The result frequency tables for characters, digraphs, trigraphs, tetragraphs and for not found digraphs are at ...
 
-### the combinations
+### The combinations
 
-After processing, the order of characters from high to lower frequencies, in groups of 8, are:
+After processing, the order of characters from high to lower frequencies, in percents of corpus, are:
 
-    **e t o a n h i r -- s l d u c b f y -- m w p g v k x j -- q z**.
+| character | absolute | cumulative |
+| -- | -- | -- |
+| e | 13.9686 | 13.9686 |
+| t | 10.2715 | 24.2401 |
+| o | 8.86967 | 33.1098 |
+| a | 8.07339 | 41.1832 |
+| n | 6.54034 | 47.7235 |
+| h | 6.1649 | 53.8884 |
+| i | 5.98081 | 59.8692 |
+| r | 5.25755 | 65.1268 |
+| s | 4.16692 | 69.2937 |
+| l | 4.02622 | 73.3199 |
+| d | 3.13398 | 76.4539 |
+| u | 2.83425 | 79.2881 |
+| c | 2.77164 | 82.0598 |
+| b | 2.72269 | 84.7825 |
+| f | 2.59027 | 87.3727 |
+| y | 2.34378 | 89.7165 |
+| m | 2.17526 | 91.8918 |
+| w | 2.15691 | 94.0487 |
+| p | 1.92028 | 95.969 |
+| g | 1.4201 | 97.3891 |
+| v | 1.30948 | 98.6985 |
+| k | 0.86415 | 99.5627 |
+| x | 0.177377 | 99.7401 |
+| j | 0.129548 | 99.8696 |
+| q | 0.088492 | 99.9581 |
+| z | 0.0418727 | 100 |
+|  |  |  |
+    
+In groups of eight keys **e t o a n h i r // s l d u c b f y // m w p g v k x j // q z**.
+
+The tables for n-grams are in ...
 
 A logical option for minimize the number of keystrokes is combine one character of each group per key, selected with digraphs and trigraphs with lowerest frequencies. ( Using ..... )
 
