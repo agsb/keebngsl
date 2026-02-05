@@ -2,6 +2,7 @@
 
 Note S is space, at begin or end of a word.
 
+| bi | absoulute | cumulative |
 | -- | -- | -- |
 | eS | 6.07324 | 6.07324 | 
 | St | 3.49669 | 9.56993 | 
