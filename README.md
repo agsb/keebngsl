@@ -102,7 +102,7 @@ After processing, the order of characters from high to lower frequencies, in per
 | z | 0.0418727 | 100 |
 |  |  |  |
     
-In groups of eight keys **e t o a n h i r // s l d u c b f y // m w p g v k x j // q z**.
+In groups of eight keys **// e t o a n h i r // s l d u c b f y // m w p g v k x j // q z //**.
 
 The tables for n-grams are in [results](https://github.com/agsb/keebngsl/blob/main/ngsl/)
 
