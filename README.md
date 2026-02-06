@@ -118,20 +118,20 @@ _work in progress_ for use [partial matching)[https://en.wikipedia.org/wiki/Pred
 
 **e t o a n h i r // s l d u c b f y // m w p g v k x j // q z**
 
-The tuples defined as **space/backspace, euk, tdx, obg, afp, nlv, hym, icj, rsw**, the **q** and **z** could be placed in any key except space.
+The tuples defined as **space/backspace, euk, tdx, obg, afp, nlvq, hym, icj, rswz**. Note, **q** and **z** could be placed in any key except space. 
+
+With the tuples defined, now the layout is a ergonomic question.
 
 | | | |
 | --- | --- | --- | 
-| 1icj | 2afp | 3obg |
-| 4tdx | 5hym | 6evk |
-|7nlvq | 8rswz | 9space/bck |
+| 1 I C J  | 2 A F P  | 3 O B G  |
+| 4 T D X  | 5 H Y M  | 6 E V K  |
+| 7 N L V Q | 8 R S W Z | 9 space/bck |
 | * | 0 | # |
-
-
 
 ## Results
 
-Using the initial NGLS list as corpus and counting the ocurrencies as ppm (0.853976) for numeric keyboard, shows:
+Using the initial NGLS list as corpus and counting the ocurrencies as ppm (853,976 in 1,000,000) for numeric keyboard, shows:
 
 | design | keystrokes | layout | 
 | -- | -- | -- | 
