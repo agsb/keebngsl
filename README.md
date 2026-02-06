@@ -120,6 +120,14 @@ _work in progress_ for use [partial matching)[https://en.wikipedia.org/wiki/Pred
 
 The tuples defined as **space/backspace, euk, tdx, obg, afp, nlv, hym, icj, rsw**, the **q** and **z** could be placed in any key except space.
 
+| | | |
+| --- | --- | --- | 
+| 1icj | 2afp | 3obg |
+| 4tdx | 5hym | 6evk |
+|7nlvq | 8rswz | 9space/bck |
+
+
+
 ## Results
 
 Using the initial NGLS list as corpus and counting the ocurrencies as ppm (0.853976) for numeric keyboard, shows:
