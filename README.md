@@ -114,6 +114,12 @@ The digraphs with first character from group one _e t o a n h i r_ with second c
 
 _work in progress_ for use [partial matching)[https://en.wikipedia.org/wiki/Prediction_by_partial_matching] and ( arithmetic coding)[https://en.wikipedia.org/wiki/Arithmetic_coding]
 
+# the tuples
+
+**e t o a n h i r // s l d u c b f y // m w p g v k x j // q z**
+
+The tuples defined as **space/backspace, euk, tdx, obg, afp, nlv, hym, icj, rsw**, the **q** and **z** could be placed in any key except space.
+
 ## Results
 
 Using the initial NGLS list as corpus and counting the ocurrencies as ppm (0.853976) for numeric keyboard, shows:
@@ -137,6 +143,8 @@ The common layout show a 112.286 % effort over a full keyboard, and the design l
     ngrp    google books n-gram, only > 1
 
 ## References
+
+https://www.newgeneralservicelist.org/
 
 https://en.wikipedia.org/wiki/N-gram
 
