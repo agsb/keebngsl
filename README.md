@@ -125,6 +125,7 @@ The tuples defined as **space/backspace, euk, tdx, obg, afp, nlv, hym, icj, rsw*
 | 1icj | 2afp | 3obg |
 | 4tdx | 5hym | 6evk |
 |7nlvq | 8rswz | 9space/bck |
+| * | 0 | # |
 
 
 
