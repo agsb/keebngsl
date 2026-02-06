@@ -11,6 +11,12 @@ case $1 in
         tr -s ' '
         ;;
 
+        "NTSL") # from TFL 1.2 list
+        cat $2 | sed '1d;' | cut -f 1,4 -d',' | \
+        tr ',[:upper:]\t' ' [:lower:] ' |  \
+        tr -s ' '
+        ;;
+
         "NAWL") # from NAWL 1.2 list
         cat $2 | sed '1d;' | cut -f 1,6 -d',' | \
         tr ',[:upper:]\t' ' [:lower:] ' |  \
