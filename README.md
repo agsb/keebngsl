@@ -66,9 +66,10 @@ For each character the fppm of ocurrences in all lemmas are normalized as absolu
 
 The result frequency tables for [characters](https://github.com/agsb/keebngsl/blob/main/tables/characters.md), [bigrams](https://github.com/agsb/keebngsl/blob/main/tables/bigrams.md) and [trigrams](https://github.com/agsb/keebngsl/blob/main/tables/trigrams.md). 
 
-Also [tetragrams](https://github.com/agsb/keebngsl/blob/main/tables/tetragrams.md) and not found digraphs are at [results](https://github.com/agsb/keebngsl/tree/main/tables/ngsl), which are maybe usefull for represent a full word as combination of inexistant digraphs.
+Also shows [tetragrams](https://github.com/agsb/keebngsl/blob/main/tables/tetragrams.md) and [not found](https://github.com/agsb/keebngsl/tree/main/tables/notfounds.md) digrams, which are maybe usefull for represent a full word as combination of inexistant digraphs.
 
-Tables with bigrams [beginning](https://github.com/agsb/keebngsl/blob/main/tables/beginnings.md) or [ending](https://github.com/agsb/keebngsl/blob/main/tables/endings.md) with space show that space 
+Tables with bigrams [beginning](https://github.com/agsb/keebngsl/blob/main/tables/beginnings.md) or [ending](https://github.com/agsb/keebngsl/blob/main/tables/endings.md) with space.  
+
 ### The combinations
 
 After processing, the order of characters from high to lower frequencies, in percents of corpus, are:
