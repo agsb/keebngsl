@@ -14,7 +14,7 @@ case $1 in
         "NTSL") # from TFL 1.2 list
         cat $2 | sed '1d;' | cut -f 1,4 -d',' | \
         tr ',[:upper:]\t' ' [:lower:] ' |  \
-        tr -s ' '
+        tr -s ' ' | sed -e 's/\..*$//'
         ;;
 
         "NAWL") # from NAWL 1.2 list

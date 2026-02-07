@@ -11,9 +11,13 @@ BEGIN {
 
         # sum of counts
         
+        sumb = 0.0
+
+        sumc = 0.0
+
         sumw = 0.0
         
-        suma = 0.0
+        sumv = 0.0
 
         }
 
@@ -25,21 +29,27 @@ BEGIN {
         # wise 
         $0 = tolower ($0)
 
+        # many characters
         w = split ($1,is,"")
         
-        # sum all fppms
-
-        v = $2/1000000.0
+        # many occurences 
+        v = $2
 
         # absolute sum
-        suma += 0.0 + v
+        sumv += 0.0 + v
 
-        # weighted sum
-        sumw += 0.0 + v * w
+        # character sum
+        sumw += 0.0 + w
+
+        # weigth sum
+        sumb += 0.0 + v * w
+
+        # count words
+        sumc++
 
         }
 
 END {
-        print " " sumw " " suma " "
+        print " keystrokes: " sumb " corpus: " sumv " lemmas: " sumc " mean length: " sumb / sumv " mean: " sumw / sumc " "
 
         }
