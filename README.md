@@ -137,17 +137,17 @@ With the tuples defined, now the layout is a ergonomic question.
 
 ## Results
 
-Using the initial NGLS list as corpus and counting the ocurrencies as ppm (853,976 in 1,000,000) for numeric keyboard, shows:
+Using the initial NGLS list as corpus and counting the ocurrencies as ppm (853,976 in 1,000,000) for numeric keyboard, after substitute the characters by number of keystrokes and counting the keystrokes, shows (in ppm) :
 
 | design | keystrokes | layout | 
 | -- | -- | -- | 
 | full keyboard | 3.30764 | abcdefghijklmnopqrstuvwxyz |
-| common layout | 7.02167 | _,@ abc def ghi jkl mno pqrs tuv wxyz * 0 # | 
-| design layout | 4.80558 | space afp obg tdx hym euk nlvq icj rswz * 0 # |
+| common tuples | 7.02167 | _,@ abc def ghi jkl mno pqrs tuv wxyz * 0 # | 
+| design tuples | 4.80558 | icj afp obg tdx hym euk nlvq rswz space * 0 # |
 
-Adicional functions are assigned to __* 0 #__
+Adicional functions are assigned to __* 0 #__. An assign could be: 0 acts as break eg. af is 202 , 00 as shift, etc
 
-The common layout show a 112.286 % effort over a full keyboard, and the design layout only 45.287 % 
+The common tuples show a 112.286 % effort over a full keyboard, and this design tuples only 45.287 % 
 
 ## Lists used
 
