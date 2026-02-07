@@ -64,7 +64,7 @@ The reference word list used was the 2809 words of NGSL 1.2, represented as "lem
 
 For each character the fppm of ocurrences in all lemmas are normalized as absolute percentual relative to corpus, same process for bigrams, trigrams and tetragrams, including space at begin and end, to form the normal use of lemmas, also unused digraphs are listed.
 
-The result frequency tables for [characters](https://github.com/agsb/keebngsl/blob/main/characters.md), [bigrams](https://github.com/agsb/keebngsl/blob/main/bigrams.md), [trigrams](https://github.com/agsb/keebngsl/blob/main/trigrams.md). 
+The result frequency tables for [characters](https://github.com/agsb/keebngsl/blob/main/characters.md), [bigrams](https://github.com/agsb/keebngsl/blob/main/bigrams.md) and [trigrams](https://github.com/agsb/keebngsl/blob/main/trigrams.md). 
 
 Also [tetragrams](https://github.com/agsb/keebngsl/blob/main/tetragrams.md) and not found digraphs are at [results](https://github.com/agsb/keebngsl/tree/main/ngsl), which are maybe usefull for represent a full word as combination of inexistant digraphs.
 
@@ -102,13 +102,15 @@ After processing, the order of characters from high to lower frequencies, in per
 | z | 0.0418727 | 100 |
 |  |  |  |
     
-In groups of eight keys **// e t o a n h i r // s l d u c b f y // m w p g v k x j // q z //**.
+In groups of eight keys 
+
+      **// e t o a n h i r // s l d u c b f y // m w p g v k x j // q z //**.
 
 The tables for n-grams are in [results](https://github.com/agsb/keebngsl/blob/main/ngsl/)
 
-A logical option for minimize the number of keystrokes is combine one character of each group per key, selected with digraphs and trigraphs with lowerest frequencies. ( Using ..... )
+A logical option for minimize the number of keystrokes is combine one character of each group per key, selected with lowerest frequencies. 
 
-The digraphs with first character from group one _e t o a n h i r_ with second character from group two _s l d u c b f y_ were selected from the list frequencies of digraphs and complemented witht frequency 0.0 for those inexistent. Then use brute force for select best lower overall combinations.
+The digraphs with first character from group one _e t o a n h i r_ with second character from group two _s l d u c b f y_ were selected from the list frequencies of digraphs for the lowerst frequency, then those tuples are combined with third from the group _m w p g v k x j_ also for the lowerst frequency.   
 
 ## Prediction
 
