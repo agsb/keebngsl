@@ -112,6 +112,8 @@ A logical option for minimize the number of keystrokes is combine one character 
 
 The digraphs with first character from group one _e t o a n h i r_ with second character from group two _s l d u c b f y_ were selected from the list frequencies of digraphs for the lowerst frequency, then those tuples are combined with third from the group _m w p g v k x j_ also for the lowerst frequency.   
 
+The n-gram with space at begin or end have more than 20% of all ocurrences. The space deserves an uniq key.
+
 ## Prediction
 
 _work in progress_ for use [partial matching)[https://en.wikipedia.org/wiki/Prediction_by_partial_matching] and ( arithmetic coding)[https://en.wikipedia.org/wiki/Arithmetic_coding]
