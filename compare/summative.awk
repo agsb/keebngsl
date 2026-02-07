@@ -11,8 +11,6 @@ BEGIN {
 
         # sum of counts
         
-        sumb = 0.0
-
         sumc = 0.0
 
         sumw = 0.0
@@ -38,11 +36,8 @@ BEGIN {
         # absolute sum
         sumv += 0.0 + v
 
-        # character sum
-        sumw += 0.0 + w
-
         # weigth sum
-        sumb += 0.0 + v * w
+        sumw += 0.0 + v * w
 
         # count words
         sumc++
@@ -50,6 +45,6 @@ BEGIN {
         }
 
 END {
-        print " keystrokes: " sumb " corpus: " sumv " lemmas: " sumc " mean length: " sumb / sumv " mean: " sumw / sumc " "
+        print " keystrokes: " sumw " corpus: " sumv " lemmas: " sumc " mean: " sumw / sumv " "
 
         }
