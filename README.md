@@ -64,11 +64,11 @@ The reference word list used was the 2809 words of NGSL 1.2, represented as "lem
 
 For each character the fppm of ocurrences in all lemmas are normalized as absolute percentual relative to corpus, same process for bigrams, trigrams and tetragrams, including space at begin and end, to form the normal use of lemmas, also unused digraphs are listed.
 
-The result frequency tables for [characters](https://github.com/agsb/keebngsl/blob/tables/characters.md), [bigrams](https://github.com/agsb/keebngsl/blob/tables/bigrams.md) and [trigrams](https://github.com/agsb/keebngsl/blob/tables/trigrams.md). 
+The result frequency tables for [characters](https://github.com/agsb/keebngsl/blob/main/tables/characters.md), [bigrams](https://github.com/agsb/keebngsl/blob/main/tables/bigrams.md) and [trigrams](https://github.com/agsb/keebngsl/blob/main/tables/trigrams.md). 
 
-Also [tetragrams](https://github.com/agsb/keebngsl/blob/tables/tetragrams.md) and not found digraphs are at [results](https://github.com/agsb/keebngsl/tree/tables/ngsl), which are maybe usefull for represent a full word as combination of inexistant digraphs.
+Also [tetragrams](https://github.com/agsb/keebngsl/blob/main/tables/tetragrams.md) and not found digraphs are at [results](https://github.com/agsb/keebngsl/tree/main/tables/ngsl), which are maybe usefull for represent a full word as combination of inexistant digraphs.
 
-Tables with bigrams [beginning](https://github.com/agsb/keebngsl/blob/tables/beginnings.md) or [ending](https://github.com/agsb/keebngsl/blob/tables/endings.md) with space show that space 
+Tables with bigrams [beginning](https://github.com/agsb/keebngsl/blob/main/tables/beginnings.md) or [ending](https://github.com/agsb/keebngsl/blob/main/tables/endings.md) with space show that space 
 ### The combinations
 
 After processing, the order of characters from high to lower frequencies, in percents of corpus, are:
