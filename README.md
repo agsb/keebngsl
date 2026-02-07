@@ -36,13 +36,14 @@ The layout must be use an 12 keys basic numeric keypad as above and follow
 
     Assign keys order from frequency lists. 
     Balance the layout to minimize keystrokes. 
-    Avoid bigrams and trigrams on the same key. 
-    One key ( 1 ) for space and backspace.
-    Eigth keys ( 2, 3, 4, 5, 6, 7, 8, 9 ) for multiple use.
+    Avoid bigrams and trigrams on the same key.
+    
+    One key for space and backspace.
+    Eigth keys for multiple use.
     Three keys (* 0 #) for define mode and controls
     
     Maybe:
-       0  use for common symbols comma, dot, question. 
+       0  use for 0 break, 00 shift, etc. 
        \*  reserved for 12 selects as characters, symbols, functions, etc
        \#  reserved for controls, as select + group of keys + execute, and alone to ends key repeats
 
