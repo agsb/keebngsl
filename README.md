@@ -154,12 +154,11 @@ The common tuples show a 112.29% effort over a full keyboard, and this design tu
 
 ## Lists used
 
-    ngls    ngsl-1.2 
-
-    ngrf    google books n-gram, full
-
-    ngrp    google books n-gram, only > 1
-
+    FullWordFrequencyGoogle.csv   
+    NGSL_12_stats.csv  
+    NAWL_10_stats.csv 
+    TSL_12_stats.csv
+    
 ## References
 
 https://www.newgeneralservicelist.org/
