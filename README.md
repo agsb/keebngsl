@@ -1,6 +1,6 @@
 # TOKEEBS
 
-A new comfortable and efficient layout for numeric keyboards, to allow 12 keys be used for digits, characters, symbols and functions. 
+A new comfortable and  layout for numeric keyboards, to allow 12 keys be used for digits, characters, symbols and functions, with at least 30% efficient.  
 
 ## Problem
 
@@ -43,11 +43,11 @@ The layout must be use an 12 keys basic numeric keypad as above and follow
     Three keys (* 0 #) for define mode and controls
     
     Maybe:
-       0  use for 0 break, 00 shift, etc. 
+       0  use for 0 break, 00 cancel. 
        \*  reserved for 12 selects as characters, symbols, functions, etc
        \#  reserved for controls, as select + group of keys + execute, and alone to ends key repeats
 
-With one key for space or backspace, and **8 keys for 26 characters**, then 6 keys with 3 characters and 2 keys with four. 
+With one key for space or backspace, and 8 keys for 26 characters, then 6 keys with 3 characters and 2 keys with four. 
 
 ## NGSL
 
