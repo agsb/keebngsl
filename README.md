@@ -146,9 +146,11 @@ Using the initial NGLS list as corpus and counting the ocurrencies as ppm (853,9
 | common tuples | 7.02167 | _,@ abc def ghi jkl mno pqrs tuv wxyz * 0 # | 
 | design tuples | 4.80558 | icj afp obg tdx hym euk nlvq rswz space * 0 # |
 
-Adicional functions are assigned to __* 0 #__. An assign could be: 0 acts as break eg. af is 202 , 00 as shift, etc
+Adicional functions are assigned to __* 0 #__. An assign could be: 
+   0 acts as break eg. "after" is "2022468" , 00 cancel break, etc
+   __*__ acts as multiple selector, _**_ cancels
 
-The common tuples show a 112.286 % effort over a full keyboard, and this design tuples only 45.287 % 
+The common tuples show a 112.29% effort over a full keyboard, and this design tuples only 45.29% 
 
 ## Lists used
 
