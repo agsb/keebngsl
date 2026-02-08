@@ -113,13 +113,13 @@ The tables for n-grams are in [results](https://github.com/agsb/keebngsl/blob/ta
 
 A logical option for minimize the number of keystrokes is combine one character of each group per key, selected with lowerest frequencies. 
 
-The digraphs with first character from group one **e t o a n h i r** with second character from group two **s l d u c b f y** were selected from the list frequencies of digraphs for the lowerst frequency, then those tuples are combined with third from the group **m w p g v k x j** also for the lowerst frequency.   
+The bigrams with first character from group one **e t o a n h i r** with second character from group two **s l d u c b f y** were selected from the list frequencies of bigrams for the lowerst frequency, then those bigrams are combined with third from the group **m w p g v k x j** also for the lowerst frequency.   
 
 The n-gram with space at begin or end have more than 20% of all ocurrences. The space deserves an uniq key.
 
 ## Prediction
 
-_work in progress_ for use [partial matching)[https://en.wikipedia.org/wiki/Prediction_by_partial_matching] and ( arithmetic coding)[https://en.wikipedia.org/wiki/Arithmetic_coding]
+_work in progress_ for use [partial matching](https://en.wikipedia.org/wiki/Prediction_by_partial_matching) and [arithmetic coding](https://en.wikipedia.org/wiki/Arithmetic_coding).
 
 # the tuples
 
