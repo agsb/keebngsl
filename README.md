@@ -185,10 +185,10 @@ Using the lists NGSL-1.2, NTSL-1.0, NAWL-1.0 and Google,
 ### ngsl design 
 | List | keystrokes | mean lenght |
 | --- | --- | --- |
-| | ngsl | 4805579 | 5.6273 | 
-| | ntsl | 88845662 | 4.01173 | 
-| | nawl | 493141 | 12.1481 | 
-| | goog | 324378728840 | 11.7202 | 
+| ngsl | 4805579 | 5.6273 | 
+| ntsl | 88845662 | 4.01173 | 
+| nawl | 493141 | 12.1481 | 
+| goog | 324378728840 | 11.7202 | 
 
 ## Lists used
 
