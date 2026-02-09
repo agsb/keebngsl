@@ -47,7 +47,7 @@ The layout must be use an 12 keys basic numeric keypad as above and follow
     Three keys (* 0 #) for define mode and controls
     
     Maybe:
-       0  use for 0 break, 00 cancel. 
+       0  use for 0 break, 00 cancel break. Break is a end-of-character. 
        \*  reserved for 12 selects as characters, symbols, functions, etc
        \#  reserved for controls, as select + group of keys + execute, and alone to ends key repeats
 
