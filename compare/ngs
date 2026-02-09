@@ -1,8 +1,12 @@
 ngsl
- keystrokes: 4805579 corpus: 853976 lemmas: 2809 mean: 5.6273 
+- keystrokes corpus lemmas mean 
+- 4805579 853976 2809 5.6273 
 ntsl
- keystrokes: 88845662 corpus: 22146496 lemmas: 1250 mean: 4.01173 
+- keystrokes corpus lemmas mean 
+- 88845662 22146496 1250 4.01173 
 nawl
- keystrokes: 493141 corpus: 40594 lemmas: 963 mean: 12.1481 
+- keystrokes corpus lemmas mean 
+- 493141 40594 963 12.1481 
 goog
- keystrokes: 324378728840 corpus: 27676915057 lemmas: 97565 mean: 11.7202 
+- keystrokes corpus lemmas mean 
+- 324378728840 27676915057 97565 11.7202 

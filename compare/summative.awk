@@ -45,6 +45,7 @@ BEGIN {
         }
 
 END {
-        print " keystrokes: " sumw " corpus: " sumv " lemmas: " sumc " mean: " sumw / sumv " "
+        print "- keystrokes corpus lemmas mean "
+        print "- " sumw " " sumv " " sumc " " sumw / sumv " "
 
         }

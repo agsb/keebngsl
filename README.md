@@ -156,6 +156,40 @@ Adicional functions are assigned to __* 0 #__. An assign could be:
 
 The common tuples show a 112.29% effort over a full keyboard, and this design tuples only 45.29% 
 
+Using the lists NGSL-1.2, NTSL-1.0, NAWL-1.0 and Google,
+
+### Lists for corpus
+| List | fpms | lemmas |
+| --- | --- | --- |
+| ngsl | 853976 | 2809 |
+| ntsl | 46274 | 1250 |
+| nawl | 40594 | 930 |
+| google | 27676915057 | 97565 |
+
+### full keyboard
+| List | keystrokes | mean lenght |
+| --- | --- | --- |
+| ngsl | 3307643 | 3.87323 |
+| ntsl | 299038  | 6.46233 |
+| nawl | 334986 | 8.25211 |
+| goog | 221009132891 | 7.59085 |
+
+### common design 
+| List | keystrokes | mean lenght |
+| --- | --- | --- |
+| ngsl | 7021666 | 8.22232 |
+| ntsl | 26667264130 | 8.0001 | 
+| nawl | 746993 | 18.4016 |
+| goog | 469166256045 | 16.9515 |
+
+### ngsl design 
+| List | keystrokes | mean lenght |
+| --- | --- | --- |
+| | ngsl | 4805579 | 5.6273 | 
+| | ntsl | 88845662 | 4.01173 | 
+| | nawl | 493141 | 12.1481 | 
+| | goog | 324378728840 | 11.7202 | 
+
 ## Lists used
 
     FullWordFrequencyGoogle.csv   
