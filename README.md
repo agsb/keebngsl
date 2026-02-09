@@ -10,7 +10,7 @@ Every language obey to [Zipf's Law](https://en.wikipedia.org/wiki/Zipf%27s_law),
 
 Frequency analysis was performed using the NGSL 1.2 list of 2809 words to determine the frequencies of characters, bigrams, trigrams, and tetragrams, and the results are evaluated to determine the character combination per key that resulting in the lowest collision count and minimal keystrokes. 
 
-The tuples **space, afp, euk, hym, icj, nlvq, obg, rswz, tdx **  was selected for a minimal keystrokes. The best layout is being researched.
+The tuples **space, afp, euk, hym, icj, nlvq, obg, rswz, tdx**  was selected for a minimal keystrokes. The best layout is being researched.
 
 ## Telephone numeric 12 keyboard
 
