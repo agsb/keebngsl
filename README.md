@@ -142,24 +142,27 @@ With the tuples defined, now the layout is a ergonomic question.
 
 ## Results
 
-Using the initial NGLS list as corpus and counting the ocurrencies as ppm (853,976 in 1,000,000) for numeric keyboard, after substitute the characters by number of keystrokes and counting the keystrokes, shows (in ppm) :
+Using the initial NGLS list as corpus and counting the ocurrencies as fpm (853,976 in 1,000,000) for numeric keyboard, after substitute the characters by number of keystrokes and counting the keystrokes, shows (in ppm) :
 
-| design | keystrokes | layout | 
+| design | keystrokes | design | 
 | -- | -- | -- | 
 | full keyboard | 3.30764 | abcdefghijklmnopqrstuvwxyz |
 | common tuples | 7.02167 | _,@ abc def ghi jkl mno pqrs tuv wxyz * 0 # | 
-| design tuples | 4.80558 | icj afp obg tdx hym euk nlvq rswz space * 0 # |
+| ngsl tuples | 4.80558 | icj afp obg tdx hym euk nlvq rswz space * 0 # |
 
 Adicional functions are assigned to __* 0 #__. An assign could be: 
    0 acts as break eg. "after" is "2022468" , 00 cancel break, etc
-   __*__ acts as multiple selector, _**_ cancels
+   __*__ acts as multiple selector, *0 is backspace, *1 ... , _**_ cancels
 
-The common tuples show a 112.29% effort over a full keyboard, and this design tuples only 45.29% 
+With a full keyboard as reference, the common tuples show a overhead of 112.29% effort and this ngsl tuples only 45.29%. 
 
-Using the lists NGSL-1.2, NTSL-1.0, NAWL-1.0 and Google,
+Comparing the keystrokes using the lists NGSL-1.2, NTSL-1.0, NAWL-1.0 and Google, words and counts, as corpus:
 
 ### Lists for corpus
-| List | fpms | lemmas |
+
+      total in fppm is the frequency per million and lemma is a word
+      
+| List | total | words |
 | --- | --- | --- |
 | ngsl | 853976 | 2809 |
 | ntsl | 46274 | 1250 |
@@ -167,28 +170,37 @@ Using the lists NGSL-1.2, NTSL-1.0, NAWL-1.0 and Google,
 | google | 27676915057 | 97565 |
 
 ### full keyboard
-| List | keystrokes | mean lenght |
-| --- | --- | --- |
-| ngsl | 3307643 | 3.87323 |
-| ntsl | 299038  | 6.46233 |
-| nawl | 334986 | 8.25211 |
-| goog | 221009132891 | 7.59085 |
+
+   Full keyboard assign 1 key for each character
+   
+| List | keystrokes | mean | effort |
+| --- | --- | --- | --- |
+| ngsl | 3307643 | 3.87323 | 1.0 |
+| ntsl | 299038  | 6.46233 | 1.0 |
+| nawl | 334986 | 8.25211 | 1.0 |
+| goog | 221009132891 | 7.59085 | 1.0 |
 
 ### common design 
-| List | keystrokes | mean lenght |
-| --- | --- | --- |
-| ngsl | 7021666 | 8.22232 |
-| ntsl | 26667264130 | 8.0001 | 
-| nawl | 746993 | 18.4016 |
-| goog | 469166256045 | 16.9515 |
+
+   Common design assign **abc def ghi jkl mno pqrs tuv wxyz space**
+   
+| List | keystrokes | mean lenght | effort | 
+| --- | --- | --- | -- |
+| ngsl | 7021666 | 8.22232 | 2,1229 | 
+| ntsl | 26667264130 | 8.0001 | 1,2380 |
+| nawl | 746993 | 18.4016 | 2,2299 |
+| goog | 469166256045 | 16.9515 | 2,2331 |
 
 ### ngsl design 
-| List | keystrokes | mean lenght |
-| --- | --- | --- |
-| ngsl | 4805579 | 5.6273 | 
-| ntsl | 88845662 | 4.01173 | 
-| nawl | 493141 | 12.1481 | 
-| goog | 324378728840 | 11.7202 | 
+
+   NGSL design assign **icj afp obg tdx hym euk nlvq rswz space**
+   
+| List | keystrokes | mean lenght | effort
+| --- | --- | --- | -- | 
+| ngsl | 4805579 | 5.6273 |  1,4529 |
+| ntsl | 88845662 | 4.01173 | 0,6208 |
+| nawl | 493141 | 12.1481 | 1,4721 |
+| goog | 324378728840 | 11.7202 | 1,5440 | 
 
 ## Lists used
 
