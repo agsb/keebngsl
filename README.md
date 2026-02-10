@@ -156,7 +156,7 @@ Adicional functions are assigned to __* 0 #__. An assign could be:
 
 With a full keyboard as reference, the common tuples show a overhead of 112.29% effort and this ngsl tuples only 45.29%. 
 
-Comparing the keystrokes using the lists NGSL-1.2, NTSL-1.0, NAWL-1.0 and Google, words and counts, as corpus:
+Comparing the keystrokes using the lists NGSL-1.2, NTSL-1.0, NAWL-1.0, curated lists, and Google, raw list, using words and counts, as corpus:
 
 ### Lists for corpus
 
