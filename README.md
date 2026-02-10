@@ -140,6 +140,15 @@ With the tuples defined, now the layout is a ergonomic question.
 | 7 N L V Q | 8 R S W Z | 9 space/bck |
 | * | 0 | # |
 
+OR 
+
+| | | |
+| --- | --- | --- | 
+| 1 N L V Q | 2 O B G  | 3 R S W Z |
+| 4 T D X  | 5 H Y M  | 6 E V K  |
+| 7 A F P  | 8 I C J | 9 space/bck |
+| * | 0 | # |
+
 ## Results
 
 Using the initial NGLS list as corpus and counting the ocurrencies as fpm (853,976 in 1,000,000) for numeric keyboard, after substitute the characters by number of keystrokes and counting the keystrokes, shows (in ppm) :
