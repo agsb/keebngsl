@@ -1,6 +1,6 @@
 # TOKEEBS
 
-A new comfortable and  layout for numeric keyboards, to allow 12 keys be used for digits, characters, symbols and functions, with at least 30% efficient.  
+A new comfortable and layout for numeric keyboards, to allow 12 keys be used for digits, characters, symbols and functions, with at least 30% efficient than usual (common) layout.  
 
 ## Sumary
 
@@ -171,7 +171,7 @@ Comparing the keystrokes using the lists NGSL-1.2, NTSL-1.0, NAWL-1.0 and Google
 
 ### full keyboard
 
-   Full keyboard assign 1 key for each character
+   Full keyboard assign 1 key for each character, reference
    
 | List | keystrokes | mean | effort |
 | --- | --- | --- | --- |
@@ -182,7 +182,7 @@ Comparing the keystrokes using the lists NGSL-1.2, NTSL-1.0, NAWL-1.0 and Google
 
 ### common design 
 
-   Common design assign **abc def ghi jkl mno pqrs tuv wxyz space**
+   Common design assign **abc def ghi jkl mno pqrs tuv wxyz space**, mean 2,2015
    
 | List | keystrokes | mean lenght | effort | 
 | --- | --- | --- | -- |
@@ -193,7 +193,7 @@ Comparing the keystrokes using the lists NGSL-1.2, NTSL-1.0, NAWL-1.0 and Google
 
 ### ngsl design 
 
-   NGSL design assign **icj afp obg tdx hym euk nlvq rswz space**
+   NGSL design assign **icj afp obg tdx hym euk nlvq rswz space**, mean 1,4938 
    
 | List | keystrokes | mean lenght | effort
 | --- | --- | --- | -- | 
