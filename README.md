@@ -176,7 +176,7 @@ Comparing the keystrokes using the lists NGSL-1.2, NTSL-1.0, NAWL-1.0 and Google
 | List | keystrokes | mean | effort |
 | --- | --- | --- | --- |
 | ngsl | 3307643 | 3.87323 | 1.0 |
-| ntsl | 299038  | 6.46233 | 1.0 |
+| ntsl | 299038  | 7.5715 | 1.0 |
 | nawl | 334986 | 8.25211 | 1.0 |
 | goog | 221009132891 | 7.59085 | 1.0 |
 
@@ -187,7 +187,7 @@ Comparing the keystrokes using the lists NGSL-1.2, NTSL-1.0, NAWL-1.0 and Google
 | List | keystrokes | mean lenght | effort | 
 | --- | --- | --- | -- |
 | ngsl | 7021666 | 8.22232 | 2,1229 | 
-| ntsl | 26667264130 | 8.0001 | 1,2380 |
+| ntsl | 588421 | 16.8077 | 2,2199 |
 | nawl | 746993 | 18.4016 | 2,2299 |
 | goog | 469166256045 | 16.9515 | 2,2331 |
 
@@ -198,7 +198,7 @@ Comparing the keystrokes using the lists NGSL-1.2, NTSL-1.0, NAWL-1.0 and Google
 | List | keystrokes | mean lenght | effort
 | --- | --- | --- | -- | 
 | ngsl | 4805579 | 5.6273 |  1,4529 |
-| ntsl | 88845662 | 4.01173 | 0,6208 |
+| ntsl | 88845662 | 11.4044 | 1,5062 |
 | nawl | 493141 | 12.1481 | 1,4721 |
 | goog | 324378728840 | 11.7202 | 1,5440 | 
 
