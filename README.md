@@ -133,7 +133,7 @@ _work in progress_ for use [partial matching](https://en.wikipedia.org/wiki/Pred
 
 # the tuples
 
-**e t o a n h i r // s l d u c b f y // m w p g v k x j // q z**
+>___"NOR THE IA"___
 
 The tuples defined as **space/backspace, euk, tdx, obg, afp, nlvq, hym, icj, rswz**. Note, **q** and **z** could be placed in any key except space. 
 
@@ -217,20 +217,25 @@ Comparing the keystrokes using the lists NGSL-1.2, NTSL-1.0, NAWL-1.0, curated l
 | nawl | 493141 | 12.1481 | 1,4721 |
 | goog | 324378728840 | 11.7202 | 1,5440 | 
 
-## Lists used
+## Full Lists 
 
-    FullWordFrequencyGoogle.csv   
-    NGSL_12_stats.csv  
-    NAWL_10_stats.csv 
-    TSL_12_stats.csv
-    
+      
+   NGSL_12_stats.csv  [^1]
+   
+   NAWL_10_stats.csv  [^1]
+   
+   TSL_12_stats.csv [^1]
+   
+   FullWordFrequencyGoogle.csv [^2]
+     
 ## References
 
-https://www.newgeneralservicelist.org/
+[1] https://www.newgeneralservicelist.org/
 
-https://en.wikipedia.org/wiki/N-gram
+[2] https://research.google/blog/all-our-n-gram-are-belong-to-you/
 
-https://research.google/blog/all-our-n-gram-are-belong-to-you/
+[3] https://en.wikipedia.org/wiki/N-gram
+
 
 https://newgeneralservicelist/s/NGSL_12_stats.csv
 
