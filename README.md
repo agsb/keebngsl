@@ -34,11 +34,10 @@ With one key for space and backspace, and 8 keys for 26 characters, then 6 keys 
 
 The __* 0 #__ acts as magic keys. A 'magic' key is a key that produces a different outputs within different combinations of keystrokes.
 
-Maybe:
-      0  reserved for break, a soft end-of-character. 
-      \#  reserved for functions, use for select + group of keys + execute, as # 1234 #
-      \*  reserved for modes, select characters, symbols, controls, etc 
-          \*space does backspace, 0* cancel break, #* cancel functions
+    0  reserved for break, a soft end-of-character. 
+    \#  reserved for functions, use for select + group of keys + execute, as # 1234 #
+    \*  reserved for modes, select characters, symbols, controls, etc 
+          \* space does backspace, 0 * cancel break, # * cancel functions
 
 ## NGSL
 
