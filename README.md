@@ -46,12 +46,15 @@ The layout must be use an 12 keys basic numeric keypad as above and follow
     Eigth keys for multiple use.
     Three keys (* 0 #) for define mode and controls
     
-    Maybe:
-       0  use for 0 break, 00 cancel break. Break is a end-of-character. 
-       \*  reserved for 12 selects as characters, symbols, functions, etc
-       \#  reserved for controls, as select + group of keys + execute, and alone to ends key repeats
+With one key for space and backspace, and 8 keys for 26 characters, then 6 keys with 3 characters and 2 keys with four. 
 
-With one key for space or backspace, and 8 keys for 26 characters, then 6 keys with 3 characters and 2 keys with four. 
+The __* 0 #__ acts as magic keys. A 'magic' key is a key that produces a different outputs within different combinations of keystrokes.
+
+Maybe:
+      0  reserved for break, a soft end-of-character. 
+      \#  reserved for functions, use for select + group of keys + execute, as # 1234 #
+      \*  reserved for modes, select characters, symbols, controls, etc 
+          \*space does backspace, 0* cancel break, #* cancel functions
 
 ## NGSL
 
@@ -89,6 +92,7 @@ After processing, the order of characters from high to lower frequencies, in per
 | h | 6.1649 | 53.8884 |
 | i | 5.98081 | 59.8692 |
 | r | 5.25755 | 65.1268 |
+| | | |
 | s | 4.16692 | 69.2937 |
 | l | 4.02622 | 73.3199 |
 | d | 3.13398 | 76.4539 |
@@ -97,6 +101,7 @@ After processing, the order of characters from high to lower frequencies, in per
 | b | 2.72269 | 84.7825 |
 | f | 2.59027 | 87.3727 |
 | y | 2.34378 | 89.7165 |
+| | | |
 | m | 2.17526 | 91.8918 |
 | w | 2.15691 | 94.0487 |
 | p | 1.92028 | 95.969 |
@@ -105,6 +110,7 @@ After processing, the order of characters from high to lower frequencies, in per
 | k | 0.86415 | 99.5627 |
 | x | 0.177377 | 99.7401 |
 | j | 0.129548 | 99.8696 |
+| | | |
 | q | 0.088492 | 99.9581 |
 | z | 0.0418727 | 100 |
 |  |  |  |
@@ -131,7 +137,7 @@ _work in progress_ for use [partial matching](https://en.wikipedia.org/wiki/Pred
 
 The tuples defined as **space/backspace, euk, tdx, obg, afp, nlvq, hym, icj, rswz**. Note, **q** and **z** could be placed in any key except space. 
 
-With the tuples defined, now the layout is a ergonomic question.
+With the tuples defined, now the layout is a ergonomic and aesthetics question. Examples:
 
 | | | |
 | --- | --- | --- | 
