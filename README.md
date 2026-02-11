@@ -144,6 +144,14 @@ OR
 Question the Google IA about "best layout for space, afp, euk, hym, icj, nlvq, obg, rswz, tdx in a 9 keys numeric keypad", it proposed
 as design consideration placing "Space" on the 5-key (center) allows for easy access with the index finger/thumb, mimicking the central positioning of the spacebar in normal typing. Not much for new design.
 
+| | | |
+| --- | --- | --- | 
+| 1 T D X  | 2 H Y M  | 3 E V K  |
+| 4 A F P  | 5 space/bck | 6 I C J | 
+| 7 N L V Q | 8 O B G  | 9 R S W Z |
+| * | 0 | # |
+
+
 ## Results
 
 Using the initial NGLS list as corpus and counting the ocurrencies as fpm (853,976 in 1,000,000) for numeric keyboard, after substitute the characters by number of keystrokes and counting the keystrokes, shows (in ppm) :
