@@ -1,6 +1,6 @@
-# TOKEEBS
+# KEEBS-NGSL
 
-A new comfortable and layout for numeric keyboards, to allow 12 keys be used for digits, characters, symbols and functions, at least 30% efficient than usual (common) layout.  
+A new comfortable and layout for small numeric keyboards, to allow 12 keys be used for digits, characters, symbols and functions, at least 30% efficient than usual (common) layout.  
 
 ## Sumary
 
@@ -14,25 +14,9 @@ The tuples **space, afp, euk, hym, icj, nlvq, obg, rswz, tdx**  was selected for
 
 ## Telephone numeric 12 keyboard
 
-The common 12 keys numeric keyboard was designed by Sundstrand’s, the 10-key adding machine, in 1914.
-Historic references at https://uxdesign.cc/a-brief-history-of-the-numeric-keypad-59112cbf4c49
+The common 12 keys numeric keyboard was designed by Sundstrand’s, the 10-key adding machine, in 1914. Historic references at https://uxdesign.cc/a-brief-history-of-the-numeric-keypad-59112cbf4c49.
 
-Old telephone keyboards have a character layout over the numeric 12 keys, but to access the keys must press it 1 or 2 or 3 times, like 8(t)44(h)-1-444(i)7777(s)
-
-| key | 1st | 2nd | 3rd | 4th |
-| -- | -- | -- | -- | -- |
-   | 1 | record on/off
-   | 2 | a|b|c| |
-   | 3 | d|e|f| |
-   | 4 | g|h|i| |
-   | 5 | j|k|l| |
-   | 6 | m|n|o| |
-   | 7 | p|q|r|s |
-   | 8 | t|u|v| |
-   | 9 | w|x|y|z |
-   | 0 | space | | | |
-   | * | 1|a|?| | |
-   | # | shift on/off |
+Old (telephone keypads)(https://en.wikipedia.org/wiki/Telephone_keypad) have a character layout  2=ABC, 3=DEF, 4=GHI, 5=JKL, 6=MNO, 7=PQRS, 8=TUV, 9=WXYZ over the numeric keys, for use of Multi-tap, pressing a key multiple times to cycle through letters, or T9 (Text on 9 keys),  predictive  system.
 
 ## Restrictions
 
