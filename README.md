@@ -30,14 +30,14 @@ The layout must be use an 12 keys basic numeric keypad as above and follow
     Eigth keys for multiple use.
     Three keys (* 0 #) for define mode and controls
     
-With one key for space and backspace, and 8 keys for 26 characters, then 6 keys with 3 characters and 2 keys with four. 
+With one key for space and backspace, and 8 keys for 26 characters, leaving 6 keys with 3 characters and 2 keys with four. 
 
 The __* 0 #__ acts as magic keys. A 'magic' key is a key that produces a different outputs within different combinations of keystrokes.
 
     0  reserved for break, a soft end-of-character. 
     \#  reserved for functions, use for select + group of keys + execute, as # 1234 #
     \*  reserved for modes, select characters, symbols, controls, etc 
-          \* space does backspace, 0 * cancel break, # * cancel functions
+        ( \* space does backspace, 0 * cancel break, # * cancel functions, )
 
 ## NGSL
 
@@ -141,7 +141,7 @@ OR
 ## AI Overview (edited)
 
 Question the Google IA about "best layout for space, afp, euk, hym, icj, nlvq, obg, rswz, tdx in a 9 keys numeric keypad", it proposed
-as design consideration placing "Space" on the 5-key (center) allows for easy access with the index finger/thumb, mimicking the central positioning of the spacebar in normal typing. Not much for new design.
+as design consideration placing "space" on the 5-key (center) allows for easy access with the index finger/thumb, mimicking the central positioning of the spacebar in normal typing. Not much for new design.
 
 | | | |
 | --- | --- | --- | 
@@ -149,7 +149,6 @@ as design consideration placing "Space" on the 5-key (center) allows for easy ac
 | 4 A F P  | 5 space/bck | 6 I C J | 
 | 7 N L V Q | 8 O B G  | 9 R S W Z |
 | * | 0 | # |
-
 
 ## Results
 
@@ -161,17 +160,19 @@ Using the initial NGLS list as corpus and counting the ocurrencies as fpm (853,9
 | common tuples | 7.02167 | _,@ abc def ghi jkl mno pqrs tuv wxyz * 0 # | 
 | ngsl tuples | 4.80558 | icj afp obg tdx hym euk nlvq rswz space * 0 # |
 
-Adicional functions are assigned to __* 0 #__. An assign could be: 
-   0 acts as break eg. "after" is "2022468" , 00 cancel break, etc
+Adicional functions are assigned to __* 0 #__. 
+
+An assign could be: 
+   0 acts as break eg. "after" is "2022468" , 0* cancel break
    __*__ acts as multiple selector, *0 is backspace, *1 ... , _**_ cancels
 
-With a full keyboard as reference, the common tuples show a overhead of 112.29% effort and this ngsl tuples only 45.29%. 
+With a full keyboard as reference, the common tuples show a overhead of 112.29% effort and the ngsl tuples only 45.29%. 
 
 Comparing the keystrokes using the lists NGSL-1.2, NTSL-1.0, NAWL-1.0, curated lists, and Google, raw list, using words and counts, as corpus:
 
 ### Lists for corpus
 
-      total in fppm is the frequency per million and lemma is a word
+Total in fppm is the frequency per million and lemma is a word
       
 | List | total | words |
 | --- | --- | --- |
@@ -182,7 +183,7 @@ Comparing the keystrokes using the lists NGSL-1.2, NTSL-1.0, NAWL-1.0, curated l
 
 ### full keyboard
 
-   Full keyboard assign 1 key for each character, reference
+Full keyboard assign 1 key for each character, reference
    
 | List | keystrokes | mean | effort |
 | --- | --- | --- | --- |
@@ -193,7 +194,7 @@ Comparing the keystrokes using the lists NGSL-1.2, NTSL-1.0, NAWL-1.0, curated l
 
 ### common design 
 
-   Common design assign **abc def ghi jkl mno pqrs tuv wxyz space**, mean 2,2015
+Common design assign **abc def ghi jkl mno pqrs tuv wxyz space**, mean 2,2015
    
 | List | keystrokes | mean lenght | effort | 
 | --- | --- | --- | -- |
@@ -204,7 +205,7 @@ Comparing the keystrokes using the lists NGSL-1.2, NTSL-1.0, NAWL-1.0, curated l
 
 ### ngsl design 
 
-   NGSL design assign **icj afp obg tdx hym euk nlvq rswz space**, mean 1,4938 
+NGSL design assign **icj afp obg tdx hym euk nlvq rswz space**, mean 1,4938 
    
 | List | keystrokes | mean lenght | effort
 | --- | --- | --- | -- | 
@@ -214,7 +215,6 @@ Comparing the keystrokes using the lists NGSL-1.2, NTSL-1.0, NAWL-1.0, curated l
 | goog | 324378728840 | 11.7202 | 1,5440 | 
 
 ## Full Lists 
-
       
    NGSL_12_stats.csv  [^1]
    
@@ -231,7 +231,6 @@ Comparing the keystrokes using the lists NGSL-1.2, NTSL-1.0, NAWL-1.0, curated l
 [2] https://research.google/blog/all-our-n-gram-are-belong-to-you/
 
 [3] https://en.wikipedia.org/wiki/N-gram
-
 
 https://newgeneralservicelist/s/NGSL_12_stats.csv
 
