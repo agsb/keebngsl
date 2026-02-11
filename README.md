@@ -1,6 +1,6 @@
 # KEEBS-NGSL
 
-A new comfortable and layout for small numeric keyboards, to allow 12 keys be used for digits, characters, symbols and functions, at least 30% efficient than usual (common) layout.  
+A new comfortable and layout for small numeric keyboards, to allow 12 keys be used for digits, characters, symbols and functions, at least 32% efficient than usual (common) layout.  
 
 ## Sumary
 
