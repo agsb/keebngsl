@@ -16,7 +16,7 @@ The tuples **space, afp, euk, hym, icj, nlvq, obg, rswz, tdx**  was selected for
 
 The common 12 keys numeric keyboard was designed by Sundstrand’s, the 10-key adding machine, in 1914. Historic references at https://uxdesign.cc/a-brief-history-of-the-numeric-keypad-59112cbf4c49.
 
-Old (telephone keypads)(https://en.wikipedia.org/wiki/Telephone_keypad) have a character layout  2=ABC, 3=DEF, 4=GHI, 5=JKL, 6=MNO, 7=PQRS, 8=TUV, 9=WXYZ over the numeric keys, for use of Multi-tap, pressing a key multiple times to cycle through letters, or T9 (Text on 9 keys),  predictive  system.
+Old [telephone keypads](https://en.wikipedia.org/wiki/Telephone_keypad) have a character layout  2=ABC, 3=DEF, 4=GHI, 5=JKL, 6=MNO, 7=PQRS, 8=TUV, 9=WXYZ over the numeric keys, for use of Multi-tap, pressing a key multiple times to cycle through letters, or T9 (Text on 9 keys),  predictive  system.
 
 ## Restrictions
 
