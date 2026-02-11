@@ -8,7 +8,7 @@ What could be the best comfortable layout for a numerical 12 keys that allows us
 
 Every language obey to [Zipf's Law](https://en.wikipedia.org/wiki/Zipf%27s_law), and any keyboard could be more efficient when keep it in mind.
 
-Frequency analysis was performed using the NGSL 1.2 list of 2809 words to determine the frequencies of characters, bigrams, trigrams, and tetragrams, and the results are evaluated to determine the character combination per key that resulting in the lowest collision count and minimal keystrokes. 
+Frequency analysis was performed using the NGSL 1.2 list of 2809 words to determine the frequencies of characters, bigrams, trigrams, and tetragrams, and the results are evaluated to determine the characters per key combination that resulting in the lowest collision count and minimal keystrokes. 
 
 The tuples **space, afp, euk, hym, icj, nlvq, obg, rswz, tdx**  was selected for a minimal keystrokes. The best layout is being researched.
 
@@ -16,7 +16,7 @@ The tuples **space, afp, euk, hym, icj, nlvq, obg, rswz, tdx**  was selected for
 
 The common 12 keys numeric keyboard was designed by Sundstrand’s, the 10-key adding machine, in 1914. Historic references at https://uxdesign.cc/a-brief-history-of-the-numeric-keypad-59112cbf4c49.
 
-Old [telephone keypads](https://en.wikipedia.org/wiki/Telephone_keypad) have a character layout  2=ABC, 3=DEF, 4=GHI, 5=JKL, 6=MNO, 7=PQRS, 8=TUV, 9=WXYZ over the numeric keys, for use of Multi-tap, pressing a key multiple times to cycle through letters, or T9 (Text on 9 keys),  predictive  system.
+Old [telephone keypads](https://en.wikipedia.org/wiki/Telephone_keypad) have a character layout  2=ABC, 3=DEF, 4=GHI, 5=JKL, 6=MNO, 7=PQRS, 8=TUV, 9=WXYZ over the numeric keys, for use of Multi-tap, pressing a key multiple times to cycle through letters, or T9 (Text on 9 keys),  predictive system. The __0__ and __1__ keys have special attributes and extra __*__ and __#__ are used for functions.
 
 ## Restrictions
 
