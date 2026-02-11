@@ -139,35 +139,11 @@ OR
 | 7 A F P  | 8 I C J | 9 space/bck |
 | * | 0 | # |
 
-## AI Overview
+## AI Overview (edited)
 
-__Question the Google IA about "best layout for space, afp, euk, hym, icj, nlvq, obg, rswz, tdx in a 9 keys numeric keypad"__
+Question the Google IA about "best layout for space, afp, euk, hym, icj, nlvq, obg, rswz, tdx in a 9 keys numeric keypad", it proposed
+as design consideration placing "Space" on the 5-key (center) allows for easy access with the index finger/thumb, mimicking the central positioning of the spacebar in normal typing. Not much for new design.
 
-Based on the need to arrange the nine character groups (space, afp, euk, hym, icj, nlvq, obg, rswz, tdx) onto a 3x3 (9-key) numeric keypad for efficient input, an alphabetical or functional grouping approach is best.
- 
-Here is the recommended layout for a 9-key numeric keypad, optimized for logical placement:
-
-| | | |
-| -- | -- | -- |
-| 1 AFP	| 2	EUK | 3 HYM|
-| 4 ICJ	| 5	Space | 6 NLVQ |
-| 7	OBG | 8	RSWZ | 9 TDX |
-	
-Design Considerations
-
-    Central Space: Placing "Space" on the 5-key (center) allows for easy access with the index finger/thumb, mimicking the central positioning of the spacebar in normal typing.
-    Logical Letter Grouping: The sets are organized similarly to traditional T9/alphabetical layouts (1-3 top, 4-6 middle, 7-9 bottom) to reduce cognitive load, as alphabetical layouts are often easier to learn.
-    Ambiguity Resolution: To handle cases where groups share letters, this layout should be used with a 9-key compatible text replacement program (like PhraseExpress) to handle predictions. 
-
-Alternative: T9-QWERTY Approach
-If the goal is to keep common letters closer to the home row, you could use a T9-QWERTY adapted layout which maps alphabetical sets to a 3x3 grid: 
-
-    7,8,9 (Top): rswz, adf, nlvq
-    4,5,6 (Middle): olx, ewv, img
-    1,2,3 (Bottom): cyk, thj, su
-    0: Space 
-
-However, the first layout (AFP, EUK, HYM / ICJ, Space, NLVQ / OBG, RSWZ, TDX) is more intuitive for a 9-key alphanumeric mapping. 
 ## Results
 
 Using the initial NGLS list as corpus and counting the ocurrencies as fpm (853,976 in 1,000,000) for numeric keyboard, after substitute the characters by number of keystrokes and counting the keystrokes, shows (in ppm) :
