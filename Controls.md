@@ -23,6 +23,13 @@ proposed but need verification of conflicts
 | \* 0 | | |
 | \* # | | |
 
+### numerics
+
+numeric mode needs a backspace and a enter
+usually the * and # keys.
+
+*** conflicts ***
+
 ### directional
 
 movements and acts
