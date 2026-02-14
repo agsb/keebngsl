@@ -2,14 +2,15 @@
 
 the controls and functions are selected using __spc, 0, #, *__ keys.
 
-0 space back-space
-0 # caps lock, 0  cancel
-0 * 
-
-\# space character mode
-\# XXXX space, extra modes
-\# 0 numeric mode
-\# * directional mode
+| combo | does | action|
+| -- | -- | -- |
+|0 space | back-space | |
+|0 # | caps lock, 0  cancel | |
+|0 * | | |
+|\# space |character mode||
+|\# XXXX space| extra modes|
+|\# 0 |numeric mode| |
+|\# * |directional mode| |
 
 ### directional
 
