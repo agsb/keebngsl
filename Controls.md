@@ -2,6 +2,8 @@
 
 the controls and functions are selected using __spc, 0, #, *__ keys.
 
+proposed but need verification of conflicts
+
 ## selectors
 
 | combo | does | action |
