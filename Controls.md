@@ -6,7 +6,8 @@ the controls and functions are selected using __spc, 0, #, *__ keys.
 
 | combo | does | action |
 | -- | -- | -- |
-|0 space | back-space | |
+| 0 space | back-space | |
+| 0 XXX space |  | |
 |0 # | caps lock | 0  cancel |
 |0 * | | |
 | | | |
