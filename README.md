@@ -124,18 +124,18 @@ With the tuples defined, now the layout is a ergonomic and aesthetics question. 
 
 | | | |
 | --- | --- | --- | 
-| 1 I C J  | 2 A F P  | 3 O B G  |
+| 7 I C J  | 8 A F P  | 9 O B G  |
 | 4 T D X  | 5 H Y M  | 6 E V K  |
-| 7 N L V Q | 8 R S W Z | 9 space/bck |
+| 1 N L V Q | 2 R S W Z | 3 space/bck |
 | * | 0 | # |
 
 OR 
 
 | | | |
 | --- | --- | --- | 
-| 1 N L V Q | 2 O B G  | 3 R S W Z |
+| 7 N L V Q | 8 O B G  | 9 R S W Z |
 | 4 T D X  | 5 H Y M  | 6 E V K  |
-| 7 A F P  | 8 I C J | 9 space/bck |
+| 1 A F P  | 2 I C J | 3 space/bck |
 | * | 0 | # |
 
 ## AI Overview (edited)
@@ -145,9 +145,9 @@ as design consideration placing "space" on the 5-key (center) allows for easy ac
 
 | | | |
 | --- | --- | --- | 
-| 1 T D X  | 2 H Y M  | 3 E V K  |
+| 7 T D X  | 8 H Y M  | 9 E V K  |
 | 4 A F P  | 5 space/bck | 6 I C J | 
-| 7 N L V Q | 8 O B G  | 9 R S W Z |
+| 1 N L V Q | 2 O B G  | 3 R S W Z |
 | * | 0 | # |
 
 ## Results

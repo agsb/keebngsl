@@ -23,7 +23,6 @@ accountant 143
 clerk 141
 lobby 141
 publish 139
-résumé 56
 enclose 136
 applicant 133
 seminar 133
@@ -44,7 +43,6 @@ cafeteria 103
 chef 100
 elevator 96
 reception 96
-correctly #n/a
 lease 91
 bicycle 91
 notify 91
@@ -101,8 +99,6 @@ assignment 61
 exit 61
 attendee 61
 cruise 60
-birthday #n/a
-café 60
 comprehension 59
 mall 59
 medication 59
@@ -288,7 +284,7 @@ sculpture 32
 anniversary 31
 buffet 32
 defective 31
-ice cream 31
+icecream 31
 leak 31
 occupancy 31
 proficiency 31
@@ -299,13 +295,11 @@ basketball 31
 delete 30
 illogical 30
 pet 30
-textbook #n/a
 accurately 30
 cabin 30
 conductor 30
 inspector 30
 intern 30
-semester #n/a
 confirmation 29
 congratulation 29
 expertise 29
@@ -711,7 +705,6 @@ discontinue 14
 dishwasher 14
 drought 14
 economize 14
-entrée 14
 firework 14
 freight 14
 fry 14
@@ -722,7 +715,6 @@ inclusive 14
 insufficient 14
 introductory 14
 junk 14
-ma'am #n/a
 mileage 14
 noisy 14
 pan 15

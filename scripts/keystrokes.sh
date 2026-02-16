@@ -3,8 +3,7 @@
 
  > cgs
  > ngs
- > fcs
-
+ > fgs
 
  # corpus, lemma fpm
 

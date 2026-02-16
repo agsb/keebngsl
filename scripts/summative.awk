@@ -42,6 +42,7 @@ BEGIN {
         # count words
         sumc++
 
+        # print "( " NF " " sumw " " sumv " " sumc " )"
         }
 
 END {
