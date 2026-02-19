@@ -2,7 +2,7 @@
 
 The controls and functions are selected using __spc, 0, #, *__ keys.
 
-proposed but need verification of conflicts
+_______proposed but need verification of conflicts_______
 
 ## basic layout
 
@@ -21,19 +21,19 @@ Multi-tap mode
 
 Using * 0 # there are 3 sets of possible selectors
 
-### begin with 0
+### begin with __0__
 
 | combo | does | action |
 | -- | -- | -- |
 | 0 | end-of-character | in mode character |
 | 0 space | back-space | in mode character |
 | 0 XXXX space |  | |
-| 0 # | caps lock | 0  cancel |
+| 0 # | caps lock | 0 #  cancel ( toggle ) |
 | 0 * | | |
 | 0 0 | void | repeats acts as just 0 |
 | | | |
 
-### begin with #
+### begin with __\#__
 
 | combo | does | action |
 | -- | -- | -- |
