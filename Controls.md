@@ -19,14 +19,20 @@ Multi-tap mode
 
 ## selectors
 
+Using * 0 # there are 3 sets of possible selectors
+
+### begin with 0
+
 | combo | does | action |
 | -- | -- | -- |
-| 0 | end-of-character | |
-| 0 space | back-space | |
+| 0 | end-of-character | in mode character |
+| 0 space | back-space | in mode character |
 | 0 XXXX space |  | |
 | 0 # | caps lock | 0  cancel |
 | 0 * | | |
 | | | |
+
+### begin with #
 
 | combo | does | action |
 | -- | -- | -- |
@@ -35,6 +41,8 @@ Multi-tap mode
 | \# 0 | numeric mode | |
 | \# * | directional mode| |
 | | | |
+
+### begin with *
 
 | combo | does | action |
 | -- | -- | -- |
