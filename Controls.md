@@ -66,15 +66,15 @@ movements and acts
 
 | key | sign | function |
 | --| -- | -- |
-| 1 | X | cancel |
-| 2 | upper | |
-| 3 | V | confirm |
+| 7 | X | cancel |
+| 8 | upper | |
+| 9 | V | confirm |
 | 4 | left | |
 | 5 | center | select |
 | 6 | rigth | |
-| 7 | Z | prev |
-| 8 | down | |
-| 9 | W | next |
+| 1 | Z | prev |
+| 2 | down | |
+| 3 | W | next |
 
 
 
