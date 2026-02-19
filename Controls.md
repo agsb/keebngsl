@@ -30,6 +30,7 @@ Using * 0 # there are 3 sets of possible selectors
 | 0 XXXX space |  | |
 | 0 # | caps lock | 0  cancel |
 | 0 * | | |
+| 0 0 | void | repeats acts as just 0 |
 | | | |
 
 ### begin with #
