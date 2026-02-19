@@ -68,7 +68,7 @@ movements and acts
 | --| -- | -- |
 | 7 | X | cancel |
 | 8 | upper | |
-| 9 | V | confirm |
+| 9 | Y | confirm |
 | 4 | left | |
 | 5 | center | select |
 | 6 | rigth | |
