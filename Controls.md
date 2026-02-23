@@ -5,7 +5,18 @@ and multi-tap mode
 
 _______proposed but need verification of conflicts_______
 
-## text 
+## selectors
+
+Using * as backspace and # as mode selector
+
+\# 0 = mode numeric
+\# * = mode directional
+\# 1 = mode symbol 1
+\# 2 = mode symbol 2
+\# 3 = mode text
+\# 4 a 9 = not used
+
+## mode text 
 
 use multi-tap to select the character
 
@@ -16,9 +27,10 @@ use multi-tap to select the character
 | 1 A F P  | 2 I C J | 3 space/bck |
 | * | 0 | # |
 
-    0   soft end-of-character
+    0 = soft end-of-character
+    0 space = toggle caps lock
 
-## numerics
+## mode numeric
 
 numeric mode needs backspace and enter
 usually are extra keys or the * and # keys.
@@ -30,9 +42,7 @@ usually are extra keys or the * and # keys.
 | 1 | 2 | 3 |
 | * | 0 | # |
 
-__conflicts ?__
-
-## directional
+## mode directional
 
 Directional mode uses 
     up, down, left, rigth,
@@ -47,6 +57,9 @@ Directional mode uses
 | 1 back  | 2 down | 3 next |
 | * | 0 | # |
 
+    * = reserved
+    0 = reserved
+
 ### best
 
 | | | |
@@ -56,41 +69,6 @@ Directional mode uses
 | 1 cancel  | 2 select | 3 confirm |
 | * | 0 | # |
 
+    * = reserved
+    0 = reserved
 
-## selectors
-
-Using * 0 # there are 3 sets of possible selectors
-
-### begin with __0__
-
-| combo | does | action |
-| -- | -- | -- |
-| 0 | end-of-character | in mode character |
-| 0 space | back-space | in mode character |
-| 0 XXXX space |  | |
-| 0 # | caps lock | 0 #  cancel ( toggle ) |
-| 0 * | | |
-| 0 0 | void | repeats acts as just 0 |
-| | | |
-
-### begin with __\#__
-
-| combo | does | action |
-| -- | -- | -- |
-| \# space | character mode | |
-| \# XXXX space | extra modes | |
-| \# 0 | numeric mode | |
-| \# * | directional mode| |
-| | | |
-
-### begin with *
-
-| combo | does | action |
-| -- | -- | -- |
-| \* space | | |
-| \* XXXX space | | |
-| \* 0 | | |
-| \* # | | |
-| | | |
-
-##
