@@ -1,12 +1,13 @@
 # controls
 
 The controls and functions are selected using __spc, 0, #, *__ keys.
+and multi-tap mode
 
 _______proposed but need verification of conflicts_______
 
-## basic layout
+## text 
 
-Multi-tap mode
+use multi-tap to select the character
 
 | | | |
 | --- | --- | --- | 
@@ -16,6 +17,45 @@ Multi-tap mode
 | * | 0 | # |
 
     0   soft end-of-character
+
+## numerics
+
+numeric mode needs backspace and enter
+usually are extra keys or the * and # keys.
+
+| | | |
+| --- | --- | --- | 
+| 7 | 8 | 9 |
+| 4 | 5 | 6 |
+| 1 | 2 | 3 |
+| * | 0 | # |
+
+__conflicts ?__
+
+## directional
+
+Directional mode uses 
+    up, down, left, rigth,
+    cancel (X), confirm (Y), select (V), back (Z) , next (W)
+
+### usual 
+
+| | | |
+| --- | --- | --- | 
+| 7 cancel | 8 up  | 9 confirm |
+| 4 left  | 5 select | 6 right |
+| 1 back  | 2 down | 3 next |
+| * | 0 | # |
+
+### best
+
+| | | |
+| --- | --- | --- | 
+| 7 back | 8 up  | 9 next |
+| 4 left  | 5 down | 6 right |
+| 1 cancel  | 2 select | 3 confirm |
+| * | 0 | # |
+
 
 ## selectors
 
@@ -52,33 +92,5 @@ Using * 0 # there are 3 sets of possible selectors
 | \* 0 | | |
 | \* # | | |
 | | | |
-
-### numerics
-
-numeric mode needs a backspace and a enter
-usually the * and # keys.
-
-*** conflicts ***
-
-### directional
-
-movements and acts
-
-| key | sign | function |
-| --| -- | -- |
-| 7 | X | cancel |
-| 8 | upper | |
-| 9 | Y | confirm |
-| 4 | left | |
-| 5 | center | select |
-| 6 | rigth | |
-| 1 | Z | prev |
-| 2 | down | |
-| 3 | W | next |
-
-
-
-
-
 
 ##
