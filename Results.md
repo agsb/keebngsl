@@ -1,3 +1,19 @@
+
+# Results
+
+The configurations of full keyboard, common keypad and ngls keypad are 
+comparated using the lists of frequency as corpus, counting the frequency
+per million per word translated in keystrokes.
+
+the tables shows the total keystrokes, number of countings, number of 
+words and mean keystrokes per words.
+
+        ngsl, NGLS 1.2 list
+        ntsl, TFL 1.0 list
+        nawl, NAWL 1.2 list
+        goog, full raw counter from google 
+
+## full keyboard, one character per key
 ngsl
 - keystrokes corpus lemmas mean 
 - 3307643 853976 2809 3.87323 
@@ -10,6 +26,8 @@ nawl
 goog
 - keystrokes corpus lemmas mean 
 - 210091328911 27676915057 97565 7.59085 
+
+## common keypad, multi-tap with alphabetic order
 ngsl
 - keystrokes corpus lemmas mean 
 - 7021666 853976 2809 8.22232 
@@ -22,6 +40,8 @@ nawl
 goog
 - keystrokes corpus lemmas mean 
 - 469166256045 27676915057 97565 16.9515 
+
+## ngls keypad, multi-tap with frequency order
 ngsl
 - keystrokes corpus lemmas mean 
 - 4805579 853976 2809 5.6273 
