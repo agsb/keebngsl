@@ -102,7 +102,7 @@ In groups of eight keys
 
       **// e t o a n h i r // s l d u c b f y // m w p g v k x j // q z //**.
 
-The tables for n-grams are in [results](https://github.com/agsb/keebngsl/blob/tables/)
+The tables for n-grams are in [results](https://github.com/agsb/keebngsl/tree/main/tables)
 
 A logical option for minimize the number of keystrokes is combine one character of each group per key, selected with lowerest frequencies. 
 
