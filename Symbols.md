@@ -46,6 +46,22 @@ From full list of files excluding '0-9a-zA-Z' and space
  ^ 53517 
 ```
 
+And digits order :
+
+```
+| Symbol | Frequency |
+ 0 38480589 
+ 1 11945230 
+ 2 9546744 
+ 3 5878068 
+ 4 4944227 
+ 8 4037490 
+ 6 3543946 
+ 5 3419370 
+ 7 2409849 
+ 9 2077229 
+```
+
 ### Corpus Programming Languages
 
 Frequency for 30 non-character ascii symbols [1]
